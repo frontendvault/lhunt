@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+p,
+ul {
+  /* @apply font-orbit; */
+  font-family: 'Orbit', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  @apply bg-black;
+}
+h1,
+h2 {
+  font-size: 80px;
+  @apply font-bold uppercase;
+}
+h3 {
+  @apply text-[60px] uppercase font-bold;
+}
+
+h4 {
+  @apply text-[40px];
+}
+h6 {
+  @apply text-2xl uppercase font-bold;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.container {
+  @apply lg:w-[1440px];
+}
+.text-yellow-custom {
+  color: rgba(255, 175, 58, 1);
+}
+.bg-yellow-custom {
+  background: rgba(255, 175, 58, 1);
+}
+.logo-bg {
+  background: url(/images/logo-bg.svg) no-repeat top left;
+}
+.night-sky-stars-bg {
+  background: url(/images/luckhunter-comparison-bg.png) no-repeat center center;   background-attachment: unset;
+  @apply bg-cover;
+}
+.common-button {
+  box-shadow: 25px 25px 164px 0px rgba(0, 170, 255, 0.3) inset;
+  backdrop-filter: blur(64px);
+  @apply border border-sky-400 bg-gradient-to-r from-pink-600/60 via-purple-800 to-indigo-700/40 text-white;
+}
+.transparent-luminous-bg {
+  background: rgba(255, 255, 255, 0.01);
+  padding: 20px;
+}
+.casino-empire-bg {
+  background: url(/images/personalize-bg.png) no-repeat center center;
+  background-attachment: unset;
+  @apply bg-cover;
+}
+.casino-bg-shade {
+  background: url(/images/personalize-casino-item-bg.png) no-repeat center;
+  background-attachment: unset;
+}
+.banner-bg {
+  background: url(/images/banner-bg.svg) no-repeat top left;
+  background-attachment: unset;
+  background-size: cover;
+
+  @apply md:h-screen;
+}
+.presale-bg {
+  background: url(/images/presale-bg.png) no-repeat center center;    background-attachment: unset;
+  @apply bg-cover;
+}
+.presale-form-bg {
+  background: url(/images/presale-form-bg.png) no-repeat center center;    background-attachment: unset;
+  @apply bg-cover;
+}
+.casino-metaverse {
+  background: url(/images/casino-metverse-bg.png) no-repeat top center;   background-attachment: unset;
+  @apply bg-cover;
+}
+.metaverse-holder {
+  background: url(/images/casino-metverse-holder.png) no-repeat -70px -300px;   background-attachment: unset;
+  @apply p-4 flex items-center justify-center
+}
+.metaverse-item {
+  background: url(/images/metaverse-item-bg.png) no-repeat center center;   background-attachment: unset;
+  @apply bg-cover
+}
+.metaverse-item:hover:after {
+  background: url(/images/metaverse-item-hover.png) no-repeat bottom center;   background-attachment: unset;
+}
+.become-lockhunter-bg {
+  background: url(/images/lockhunter-bg.png) no-repeat center bottom;   background-attachment: unset;
+  background-size: cover;
+  @apply pt-[400px];
+}
+.own-casino-itemn-bg { background: url(/images/own-casino-itemn-bg.png) no-repeat top center;}
+.nested-tab-item-bg {
+  background: url(/images/nested-tabs-bg.svg) no-repeat center center;   background-attachment: unset;
+  @apply flex justify-center items-center;
+}
+.tokenomics-bg {
+  background: url(/images/tokenomics-bg.png) no-repeat center center;   background-attachment: unset;
+  @apply bg-cover;
+}
+
+.tokenomics-col {
+  @apply border-dashed border-white border-b pb-3;
+}
+/* .luckhunter-comparison-bg, */
+.footer-bg {
+  background: url(/images/luckhunter-comparison-bg.png) no-repeat top center; 
+  @apply bg-cover;
+}
+.roadmap-col {
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(64px);
+}
+.luckhunter-card {
+  background: url(/images/luckhunter-item-bg.png) no-repeat top left;
+}
+.token-details { background: url(/images/token-detail-bg.png) no-repeat top center}
+.token-details-right { background: url(/images/token-detail-right.png) no-repeat -40px -30px}
+.token-details h4 {
+  @apply text-yellow-custom;
+}
+.roadmap-bg {
+  background: url(/images/road-map-bg.png) no-repeat top center;   background-attachment: unset;
+  @apply bg-cover;
+}
+.faq-bg {
+  background: url(/images/faq-bg.png) no-repeat center center;   background-attachment: unset;
+  @apply bg-cover;
+}
+/* .faq-bg {box-shadow: 25px 25px 164px 0px #00AAFF4D%20inset;backdrop-filter:%20blur(64px)box-shadow:%200px%204px%2024px%200px%20#00000073;} */
+.common-blue-bg {
+  box-shadow: 25px 25px 164px 0px rgba(0, 170, 255, 0.3) inset;
+  backdrop-filter: blur(64px);
+}
