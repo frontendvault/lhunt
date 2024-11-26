@@ -37,8 +37,8 @@ export default function LuckhunterMetaverse () {
 
   return (
     <div className='flex flex-col h-full space-y-6 casino-metaverse '>
-      <div className='container mx-auto '>
-        <div className='flex flex-col text-center text-white py-10'>
+      <div className=' lg:w-[1360px] mx-auto '>
+        <div className='flex flex-col text-center text-white py-10 lg:w-[80%] lg:mx-auto'>
           <h3>What is LuckHunter Casino Metaverse?</h3>
           <p className='text-lg'>
             LuckHunter brings the top 5 iconic casino capitals of the world to a
@@ -46,7 +46,7 @@ export default function LuckhunterMetaverse () {
             gaming assets using LHUNT tokens.
           </p>
         </div>
-        <div className='flex flex-grow  p-6 rounded-lg w-[1320px] h-[830px] relative metaverse-holder lg:-mt-[100px] pt-10'>
+        <div className='flex flex-grow  p-6 rounded-lg w-[1320px] h-[810px] relative metaverse-holder lg:-mt-[100px] pt-10'>
           <div className=' flex justify-center mx-auto '>
             <Image
               src={tabs[activeTab].imgBig}
@@ -73,19 +73,22 @@ export default function LuckhunterMetaverse () {
               key={index}
               onClick={() => setActiveTab(index)}
               // css only: bg-gradient-to-b from-fuchsia-800/50 via-fuchsia-900/20
-              className={`metaverse-item relative flex-col px-4 py-2 flex justify-center rounded-lg text-center text-sm font-medium  w-[390px] h-[380px] ${
+              className={`metaverse-item relative flex-col flex justify-center rounded-lg text-center text-sm font-medium   ${
                 activeTab === index ? ' ' : ''
               }`}
             >
-              <Image
-                src={tab.imgSmall}
-                width={159}
-                height={185}
-                alt=''
-                className=' mx-auto p-0 m-0 my-auto'
-                style={{ width: 'auto', width: 'auto' }}
-              />
-              <p className='px-15 text-2xl text-white -mt-10'>{tab.title}</p>
+              <div>
+                {' '}
+                <Image
+                  src={tab.imgSmall}
+                  width={159}
+                  height={185}
+                  alt=''
+                  className=' mx-auto p-0 m-0 my-auto -mt-0'
+                  style={{ width: 'auto', width: 'auto' }}
+                />
+              </div>
+              <p className='px-10 text-2xl text-white -mt-50'>{tab.title}</p>
             </div>
           ))}
         </div>

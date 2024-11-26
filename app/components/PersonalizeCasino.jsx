@@ -101,13 +101,13 @@ export default function PersonalizeCasino () {
   ]
 
   return (
-    <div className='p-4 space-y-6 casino-empire-bg lg:h-[1000px]'>
+    <div className='p-4 space-y-6 casino-empire-bg lg:h-[800px]'>
       <div className='container mx-auto'>
         <h2 className=' text-white flex justify-between '>
           <span className='lg:text-[165px]'>Personalize</span>
           <span className='lg:text-[70px]'>Your Casino Empire</span>
         </h2>
-        <div className='flex justify-center space-x-4'>
+        <div className='flex justify-center space-x-2'>
           {mainTabs.map((tab, index) => (
             <button
               key={index}
@@ -115,13 +115,15 @@ export default function PersonalizeCasino () {
                 setMainTab(index)
                 setNestedTab(0) // Reset nested tab on main tab switch
               }}
-              className={` px-5 py-4 rounded-lg md:text-[40px] uppercase font-bold md:w-[400px] text-left bg-gradient-to-r from-cyan-500/50 to-blue-800/50 ${
+              className={` px-5 py-4 rounded-lg md:text-[40px] uppercase font-bold md:w-[420px] text-left tabbed-main-bg md:h-[170px] text-white flex justify-between items-center ${
                 mainTab === index
                   ? 'bg-blue-500 text-white'
                   : 'bg-gray-200 text-gray-800'
               }`}
             >
               {tab}
+
+              <Image src={"/images/yellow-bullet.png"} width={52} height={52}/>
             </button>
           ))}
         </div>

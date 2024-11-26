@@ -28,7 +28,7 @@ const Navbar = () => {
 
         {/* Right Button */}
         <div className="hidden md:block">
-          <button className="px-10 py-4  common-button">
+          <button className="px-10 py-4   banner-btn-right md:w-[320px] md:h-[100px] ">
             CONNECT WALLET
           </button>
         </div>

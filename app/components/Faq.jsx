@@ -28,13 +28,13 @@ const FAQ = () => {
 
   return (
     <div className="faq-bg text-white">
-    <div className="container text-center mx-auto px-4 py-8 ">
+    <div className=" md:w-[1320px] text-center mx-auto px-4 py-8 ">
       <h2 className="font-bold  mb-8">Frequently Asked Questions</h2>
       <p>Nulla lacinia, mauris et condimentum dapibus, nisl mi commodo velit,</p>
 
       <div className="mt-6">
         {faqs.slice(0, visibleCount).map((faq, index) => (
-          <div key={index} className="overflow-hidden hover:bg-gradient-to-b from-sky-500/20 to-sky-900/20 p-4 border-b border-gray-600">
+          <div key={index} className="overflow-hidden hover:bg-gradient-to-b from-sky-500/20 to-sky-900/20 p-4 border-b border-gray-600 ">
             <button
               onClick={() => toggleAccordion(index)}
               className="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-2xl  "
@@ -58,7 +58,7 @@ const FAQ = () => {
               </svg>
             </button>
             {openIndex === index && (
-              <div className="px-4 py-3 text-lg text-left">
+              <div className="px-4 py-3 text-lg text-left ">
                 {faq.answer}
               </div>
             )}

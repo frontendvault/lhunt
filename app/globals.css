@@ -52,6 +52,7 @@ h6 {
   background: url(/images/luckhunter-comparison-bg.png) no-repeat center center;   background-attachment: unset;
   @apply bg-cover;
 }
+.comparison-chart-bg { background:url(/images/comparison-chart-bg.png) no-repeat center center ;}
 .common-button {
   box-shadow: 25px 25px 164px 0px rgba(0, 170, 255, 0.3) inset;
   backdrop-filter: blur(64px);
@@ -71,12 +72,14 @@ h6 {
   background-attachment: unset;
 }
 .banner-bg {
-  background: url(/images/banner-bg.svg) no-repeat top left;
+  background: url(/images/banner-bg.svg) no-repeat left -180px;
   background-attachment: unset;
-  background-size: cover;
 
-  @apply md:h-screen;
+  @apply md:h-screen bg-cover; 
 }
+
+.banner-btn-left { background: url(/images/banner-btn-left.svg) no-repeat center center;}
+.banner-btn-right {background: url(/images/banner-btn-right.svg) no-repeat center center;}
 .presale-bg {
   background: url(/images/presale-bg.png) no-repeat center center;    background-attachment: unset;
   @apply bg-cover;
@@ -106,6 +109,9 @@ h6 {
   @apply pt-[400px];
 }
 .own-casino-itemn-bg { background: url(/images/own-casino-itemn-bg.png) no-repeat top center;}
+.tabbed-main-bg { background: url(/images/tabbed-main.png) no-repeat center center;}
+.tabbed-main-bg:hover { background: url(/images/tabbed-main-hover.png) no-repeat center center;}
+
 .nested-tab-item-bg {
   background: url(/images/nested-tabs-bg.svg) no-repeat center center;   background-attachment: unset;
   @apply flex justify-center items-center;
@@ -141,9 +147,12 @@ h6 {
   @apply bg-cover;
 }
 .faq-bg {
-  background: url(/images/faq-bg.png) no-repeat center center;   background-attachment: unset;
+  background: url(/images/tokenomics-bg.png) no-repeat top center;
   @apply bg-cover;
 }
+ .faq-accordion-bg {
+  background: url(/images/faq-bg.png) no-repeat top left;
+} 
 /* .faq-bg {box-shadow: 25px 25px 164px 0px #00AAFF4D%20inset;backdrop-filter:%20blur(64px)box-shadow:%200px%204px%2024px%200px%20#00000073;} */
 .common-blue-bg {
   box-shadow: 25px 25px 164px 0px rgba(0, 170, 255, 0.3) inset;

@@ -28,17 +28,17 @@ const Comparison = () => {
 
   return (
     <div className='luckhunter-comparison-bg'>
-      <div className='container mx-auto px-4 py-8'>
+      <div className='lg:w-[1360px] mx-auto px-4 py-8'>
         {/* Comparison Table */}
-        <h2 className='text-yellow-custom'>
+        <h2 className='text-yellow-custom md:w-[70%] mb-8 '>
           WHAT Sets Luckhunter apart form others
         </h2>
-        <div className='overflow-x-auto bg-sky-500/[.4]'>
-          <table className='min-w-full table-auto'>
+        <div className='overflow-x-auto bg-sky-500/[.4] comparison-chart-bg h-[900px] lg:p-12'>
+          <table className='min-w-full table-auto mt-20'>
             <thead>
               <tr className=''>
                 <th className='px-6 py-3 text-left text-sm font-medium text-gray-600'>
-                  <h6>Comparison</h6>
+                  <h6 className='text-white'>Comparison</h6>
                 </th>
                 <th className='px-6 py-3 text-center text-sm font-medium text-gray-600'>
                   <Image
@@ -92,14 +92,14 @@ const Comparison = () => {
             </thead>
             <tbody>
               {data.map((row, rowIndex) => (
-                <tr key={rowIndex} className='border-t border-gray-300 text-white'>
+                <tr key={rowIndex} className='border-t border-gray-600 text-white border-dashed'>
                   {/* Feature heading column */}
                   <td className='px-6 py-4 text-sm font-medium '>
                     <h6>{row.heading}</h6>
                   </td>
                   {/* Data columns with checkmarks (✓) or crosses (×) */}
                   {row.columns.map((value, index) => (
-                    <td key={index} className='px-6 py-4 text-center'>
+                    <td key={index} className='px-6 md:py-10 text-center'>
                       <div
                         className={`w-6 h-6 flex items-center justify-center rounded-full ${
                           value
