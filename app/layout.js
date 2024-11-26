@@ -20,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={` ${oswald.className}`}>
+      <body className={` ${oswald.className} bg-gray-950`}>
         <Navbar />
         <main>  {children} </main>
         <Footer />

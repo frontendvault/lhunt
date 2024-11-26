@@ -3,7 +3,7 @@ import React from 'react'
 
 const TokenDetails = () => {
   return (
-    <div className='token-details  mx-auto flex night-sky-stars-bg md:mt-48'>
+    <div className='token-details  mx-auto flex night-sky-stars-bg md:mt-48 md:pb-[300px]'>
       <div className=' lg:w-[1185px] lg:h-[638px] mx-auto flex  justify-between p-20 text-white relative'>
         <div className='flex flex-col'>
           <h2 className='uppercase'>Token Details</h2>

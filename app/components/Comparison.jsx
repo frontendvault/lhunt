@@ -40,7 +40,7 @@ const Comparison = () => {
                 <th className='px-6 py-3 text-left text-sm font-medium text-gray-600'>
                   <h6 className='text-white'>Comparison</h6>
                 </th>
-                <th className='px-6 py-3 text-center text-sm font-medium text-gray-600'>
+                <th className='px-6 py-3 text-center text-sm font-medium text-gray-600 bg-blue-500'>
                   <Image
                     src={'/images/comparison-item-1.svg'}
                     width={68}

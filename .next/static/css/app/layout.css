@@ -964,6 +964,9 @@ video {
 .relative {
   position: relative;
 }
+.-top-44 {
+  top: -11rem;
+}
 .left-0 {
   left: 0px;
 }
@@ -981,24 +984,6 @@ video {
 }
 .top-3 {
   top: 0.75rem;
-}
-.-top-60 {
-  top: -15rem;
-}
-.-top-40 {
-  top: -10rem;
-}
-.-top-32 {
-  top: -8rem;
-}
-.right-20 {
-  right: 5rem;
-}
-.right-24 {
-  right: 6rem;
-}
-.-top-44 {
-  top: -11rem;
 }
 .m-0 {
   margin: 0px;
@@ -1032,6 +1017,9 @@ video {
 }
 .-mt-9 {
   margin-top: -2.25rem;
+}
+.-mt-\[150px\] {
+  margin-top: -150px;
 }
 .mb-10 {
   margin-bottom: 2.5rem;
@@ -1129,6 +1117,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-40 {
+  height: 10rem;
+}
 .w-5 {
   width: 1.25rem;
 }
@@ -1150,14 +1141,14 @@ video {
 .w-\[50\%\] {
   width: 50%;
 }
+.w-\[80\%\] {
+  width: 80%;
+}
 .w-full {
   width: 100%;
 }
 .w-screen {
   width: 100vw;
-}
-.w-\[80\%\] {
-  width: 80%;
 }
 .min-w-full {
   min-width: 100%;
@@ -1189,6 +1180,9 @@ video {
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -1345,6 +1339,14 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
+.bg-indigo-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 27 75 / var(--tw-bg-opacity, 1));
+}
+.bg-gray-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 7 18 / var(--tw-bg-opacity, 1));
+}
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -1473,6 +1475,9 @@ video {
 .text-center {
   text-align: center;
 }
+.text-right {
+  text-align: right;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1599,7 +1604,7 @@ video {
 p,
 ul {
   font-family: Orbit, sans-serif;
-  font-family: 'Orbit', sans-serif!important;
+  font-family: 'Orbit', sans-serif !important;
   font-weight: 400;
   font-style: normal;
 }
@@ -1643,16 +1648,28 @@ h6 {
 .logo-bg {
   background: url(/images/logo-bg.svg) no-repeat top left;
 }
-.special-text{ color: transparent;    -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;}
-.night-sky-stars-bg {
-  background: url(/images/luckhunter-comparison-bg.png) no-repeat left center;   background-attachment: unset;   background-size: cover;
+.special-text {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
-.night-bg {  background: url(/images/personalise-shaded-bg.png) no-repeat left center;  background-size: cover}
-.comparison-bg { background:url(/images/comparison-bg.png) no-repeat 0 -100px ;
+.night-sky-stars-bg {
+  background: url(/images/luckhunter-comparison-bg.png) no-repeat left center;
+  background-attachment: unset;
+  background-size: cover;
+}
+.night-bg {
+  background: url(/images/personalise-shaded-bg.png) no-repeat left center;
+  background-size: cover;
+}
+.comparison-bg {
+  background: url(/images/comparison-bg.png) no-repeat 0 -100px;
   padding-bottom: 300px;
-  background-size: cover}
-.comparison-chart-bg { background:url(/images/comparison-chart-bg.png) no-repeat center center ;}
+  background-size: cover;
+}
+.comparison-chart-bg {
+  background: url(/images/comparison-chart-bg.png) no-repeat center center;
+}
 .common-button {
   box-shadow: 25px 25px 164px 0px rgba(0, 170, 255, 0.3) inset;
   backdrop-filter: blur(64px);
@@ -1675,7 +1692,7 @@ h6 {
 }
 .casino-empire-bg {
   background: url(/images/personalize-bg.png) no-repeat center center;
-  background-attachment:initial;
+  background-attachment: initial;
   background-size: cover;
 }
 .casino-bg-shade {
@@ -1685,7 +1702,7 @@ h6 {
 .banner-bg {
   background: url(/images/banner-bg.svg) no-repeat left -180px;
   background-attachment: unset;
-  background-size: cover; 
+  background-size: cover;
 }
 @media (min-width: 768px) {
 
@@ -1694,43 +1711,74 @@ h6 {
   }
 }
 
-.banner-btn-left { background: url(/images/banner-btn-left.svg) no-repeat center center;}
-.banner-btn-right {background: url(/images/banner-btn-right.svg) no-repeat center center;}
+.banner-btn-left {
+  background: url(/images/banner-btn-left.svg) no-repeat center center;
+}
+.banner-btn-right {
+  background: url(/images/banner-btn-right.svg) no-repeat center center;
+}
 .presale-bg {
-  background: url(/images/presale-bg.png) no-repeat center center;    background-attachment: unset;    background-size: cover;
+  background: url(/images/presale-bg.png) no-repeat center center;
+  background-attachment: unset;
+  background-size: cover;
 }
 .presale-form-bg {
-  background: url(/images/presale-form-bg.png) no-repeat center center;    background-attachment: unset;    background-size: cover;
+  background: url(/images/presale-form-bg.png) no-repeat center center;
+  background-attachment: unset;
+  background-size: cover;
 }
 .presale-item-bg {
-  background: url(/images/presale-item-bg.svg) no-repeat left center; 
+  background: url(/images/presale-item-bg.svg) no-repeat left center;
 }
-
 
 .casino-metaverse {
-  background: url(/images/casino-metverse-bg.png) no-repeat top center;   background-attachment: unset;   background-size: cover;
+  background: url(/images/casino-metverse-bg.png) no-repeat top center;
+  background-attachment: unset;
+  background-size: cover;
 }
 .metaverse-holder {
-  background: url(/images/casino-metverse-holder.png) no-repeat -70px -300px;   background-attachment: unset;   display: flex;   align-items: center;   justify-content: center;   padding: 1rem}
+  background: url(/images/casino-metverse-holder.png) no-repeat -70px -300px;
+  background-attachment: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
 .metaverse-item {
-  background: url(/images/metaverse-item-bg.png) no-repeat center center;   background-attachment: unset;   background-size: cover}
+  background: url(/images/metaverse-item-bg.png) no-repeat center center;
+  background-attachment: unset;
+  background-size: cover;
+}
 .metaverse-item:hover:after {
-  background: url(/images/metaverse-item-hover.png) no-repeat bottom center;   background-attachment: unset;
+  background: url(/images/metaverse-item-hover.png) no-repeat bottom center;
+  background-attachment: unset;
 }
 .become-lockhunter-bg {
-  background: url(/images/lockhunter-bg.png) no-repeat center bottom;   background-attachment: unset;
+  background: url(/images/lockhunter-bg.png) no-repeat center bottom;
+  background-attachment: unset;
   background-size: cover;
-
 }
-.own-casino-itemn-bg { background: url(/images/own-casino-itemn-bg.png) no-repeat top center;}
-.tabbed-main-bg { background: url(/images/tabbed-main.png) no-repeat center center;}
-.tabbed-main-bg:hover { background: url(/images/tabbed-main-hover.png) no-repeat center center;}
+.own-casino-itemn-bg {
+  background: url(/images/own-casino-itemn-bg.png) no-repeat top center;
+}
+.tabbed-main-bg {
+  background: url(/images/tabbed-main.png) no-repeat center center;
+}
+.tabbed-main-bg:hover {
+  background: url(/images/tabbed-main-hover.png) no-repeat center center;
+}
 
 .nested-tab-item-bg {
-  background: url(/images/nested-tabs-bg.svg) no-repeat center center;   background-attachment: unset;   display: flex;   align-items: center;   justify-content: center;
+  background: url(/images/nested-tabs-bg.svg) no-repeat center center;
+  background-attachment: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .tokenomics-bg {
-  background: url(/images/tokenomics-bg-full.png) no-repeat 0 -100px;   background-attachment: unset;   background-size: cover;
+  background: url(/images/tokenomics-bg-full.png) no-repeat 0 -100px;
+  background-attachment: unset;
+  background-size: cover;
 }
 
 .tokenomics-col {
@@ -1753,24 +1801,42 @@ h6 {
 .luckhunter-card {
   background: url(/images/luckhunter-item-bg.png) no-repeat top left;
 }
-.token-details { background: url(/images/token-detail-bg.png) no-repeat top center}
-.token-details-right { background: url(/images/token-detail-right.png) no-repeat -40px -30px}
+.token-details {
+  background: url(/images/token-detail-bg.png) no-repeat top center;
+}
+.token-details-right {
+  background: url(/images/token-detail-right.png) no-repeat -40px -30px;
+}
 
 .token-details h4 {
   color: rgba(255, 175, 58, 1);
 }
 .roadmap-bg {
-  background: url(/images/road-map-bg.png) no-repeat center -200px;   background-attachment: initial;   background-size: cover;
+  background: url(/images/road-map-bg.png) no-repeat center -200px;
+  background-attachment: initial;
+  background-size: cover;
 }
-.big-button { background: url(/images/btn-big-bg.svg) no-repeat center center;}
-.roadmap-item-bg { background: url(/images/roadmap-item-bg.svg) no-repeat top center;}
+.comparison-chart-bg table tr td:nth-child(2) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+}
+.comparison-chart-bg table td div {
+  margin-left: auto;
+  margin-right: auto;
+}
+.big-button {
+  background: url(/images/btn-big-bg.svg) no-repeat center center;
+}
+.roadmap-item-bg {
+  background: url(/images/roadmap-item-bg.svg) no-repeat top center;
+}
 .faq-bg {
   background: url(/images/tokenomics-bg.png) no-repeat top center;
   background-size: cover;
 }
- .faq-accordion-bg {
+.faq-accordion-bg {
   background: url(/images/faq-bg.png) no-repeat top left;
-} 
+}
 /* .faq-bg {box-shadow: 25px 25px 164px 0px #00AAFF4D%20inset;backdrop-filter:%20blur(64px)box-shadow:%200px%204px%2024px%200px%20#00000073;} */
 .common-blue-bg {
   box-shadow: 25px 25px 164px 0px rgba(0, 170, 255, 0.3) inset;
@@ -1882,6 +1948,22 @@ h6 {
     width: 70%;
   }
 
+  .md\:w-\[100px\] {
+    width: 100px;
+  }
+
+  .md\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .md\:w-\[380px\] {
+    width: 380px;
+  }
+
+  .md\:w-\[430px\] {
+    width: 430px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1913,6 +1995,10 @@ h6 {
   .md\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .md\:pb-\[300px\] {
+    padding-bottom: 300px;
   }
 
   .md\:text-left {
