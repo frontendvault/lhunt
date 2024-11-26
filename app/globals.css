@@ -150,9 +150,11 @@ h6 {
   @apply text-yellow-custom;
 }
 .roadmap-bg {
-  background: url(/images/road-map-bg.png) no-repeat top center;   background-attachment: unset;
+  background: url(/images/road-map-bg.png) no-repeat center -200px;   background-attachment: initial;
   @apply bg-cover;
 }
+.big-button { background: url(/images/btn-big-bg.svg) no-repeat center center;}
+.roadmap-item-bg { background: url(/images/roadmap-item-bg.svg) no-repeat top center;}
 .faq-bg {
   background: url(/images/tokenomics-bg.png) no-repeat top center;
   @apply bg-cover;

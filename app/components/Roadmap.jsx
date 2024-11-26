@@ -55,28 +55,31 @@ const Roadmap = () => {
   ]
 
   return (
-    <div className='roadmap-bg'>
+    <div className='roadmap-bg py-10'>
+      <h2 className=''>
+        <Image
+          src={'/images/roadmap-heading.svg'}
+          height={100}
+          width={1920}
+          alt=''
+        />
+      </h2>
+
       <div className='container mx-auto px-4 py-8'>
+      <p className='text-center text-white py-10'>This is the offcial LUCKHUNTER Casino roadmap</p>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
           {columns.map((column, index) => (
-            <div
-              key={index}
-              className='roadmap-col common-blue-bg p-6 rounded-lg shadow-md  transition-shadow'
-            >
-              {/* Heading */}
+            <div key={index} className='roadmap-item-bg p-6 md:min-h-[470px] '>
               <h3 className='text-2xl font-bold  mb-2 text-white text-center'>
                 {column.heading}
               </h3>
 
-              {/* Subheading */}
-              <p className='text-gray-600 mb-4 text-2xl text-yellow-custom text-center'>
+              <p className='font-bold mb-4 text-2xl text-yellow-custom text-center mt-10'>
                 {column.subheading}
               </p>
-
-              {/* List with Checkmarks */}
               <ul className='space-y-2'>
                 {column.items.map((item, idx) => (
-                  <li key={idx} className='flex items-center text-white'>
+                  <li key={idx} className='flex items-center text-white pb-2'>
                     <Image
                       src={'/images/listing-check.png'}
                       width={20}
@@ -89,8 +92,10 @@ const Roadmap = () => {
             </div>
           ))}
         </div>
-        <div className='text-center'>
-          <button className='common-button py-3 px-10 mt-8'>BUY NOW : YOUR CASINO YOUR RULES</button>{' '}
+        <div className='text-center py-10'>
+          <button className='big-button py-3 px-10 mt-8 h-[100px] w-[425px] text-white'>
+            BUY NOW : YOUR CASINO YOUR RULES
+          </button>{' '}
         </div>
       </div>
     </div>

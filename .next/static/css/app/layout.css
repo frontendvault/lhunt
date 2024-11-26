@@ -1024,6 +1024,9 @@ video {
 .ml-3 {
   margin-left: 0.75rem;
 }
+.mt-10 {
+  margin-top: 2.5rem;
+}
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1084,6 +1087,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-\[100px\] {
+  height: 100px;
+}
 .w-5 {
   width: 1.25rem;
 }
@@ -1104,6 +1110,18 @@ video {
 }
 .w-screen {
   width: 100vw;
+}
+.w-\[200px\] {
+  width: 200px;
+}
+.w-\[400px\] {
+  width: 400px;
+}
+.w-\[420px\] {
+  width: 420px;
+}
+.w-\[425px\] {
+  width: 425px;
 }
 .min-w-full {
   min-width: 100%;
@@ -1384,6 +1402,9 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -1509,11 +1530,6 @@ video {
 .drop-shadow-2xl {
   --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-.transition-shadow {
-  transition-property: box-shadow;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 .transition-transform {
   transition-property: transform;
@@ -1680,8 +1696,10 @@ h6 {
   color: rgba(255, 175, 58, 1);
 }
 .roadmap-bg {
-  background: url(/images/road-map-bg.png) no-repeat top center;   background-attachment: unset;   background-size: cover;
+  background: url(/images/road-map-bg.png) no-repeat center -200px;   background-attachment: initial;   background-size: cover;
 }
+.big-button { background: url(/images/btn-big-bg.svg) no-repeat center center;}
+.roadmap-item-bg { background: url(/images/roadmap-item-bg.svg) no-repeat top center;}
 .faq-bg {
   background: url(/images/tokenomics-bg.png) no-repeat top center;
   background-size: cover;
@@ -1776,6 +1794,10 @@ h6 {
 
   .md\:h-\[170px\] {
     height: 170px;
+  }
+
+  .md\:min-h-\[470px\] {
+    min-height: 470px;
   }
 
   .md\:w-\[1320px\] {

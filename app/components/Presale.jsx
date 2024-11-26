@@ -149,7 +149,7 @@ const Presale = () => {
               <div className='text-center'>
                 <button
                   type='submit'
-                  className='w-full py-2  text-white font-bold rounded shadow border border-gray-50'
+                  className='py-2  text-white font-bold rounded shadow big-button h-[100px] w-[425px]'
                 >
                   CONNECT WALLET
                 </button>
