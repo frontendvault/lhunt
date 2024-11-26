@@ -1,18 +1,21 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Footer = () => {
   return (
     <footer className=' text-white footer-bg'>
-      <div className='container mx-auto px-4 common-blue-bg p-20'>
-        {/* First Row: Heading */}
+      <div className='container mx-auto common-blue-bg py-10 px-[80px]'>
         <div className='text-center mb-6'>
-          <h2 className='text-2xl font-bold'>Stay Connected with Us</h2>
+          <Image
+            src='/images/footer-logo.svg'
+            width={499}
+            height={114}
+            className='mx-auto'
+          />
         </div>
 
-        {/* Second Row: Columns */}
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left'>
-          {/* First Column */}
-          <div>
+          <div className='border-r border-gray-50'>
             <h3 className='text-lg font-semibold mb-3'>Our Story</h3>
             <p className='text-gray-400'>
               Integer sagittis magna sapien, ac congue ex faucibus vitae. Duis
@@ -20,8 +23,6 @@ const Footer = () => {
               eget dapibus metus blandit. Nunc eu leo lacinia.
             </p>
           </div>
-
-          {/* Second Column: Links */}
           <div>
             <h3 className='text-lg font-semibold mb-3'>Quick Links</h3>
             <ul className='space-y-2'>
@@ -57,8 +58,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
-          {/* Third Column */}
           <div>
             <h3 className='text-lg font-semibold mb-3'>HELP</h3>
             <p className='text-gray-400'>
@@ -67,8 +66,6 @@ const Footer = () => {
             </p>
           </div>
         </div>
-
-        {/* Third Row: Copyright */}
         <div className='mt-6 text-center border-t border-gray-700 pt-4'>
           <p className='text-gray-400'>
             © {new Date().getFullYear()} Your Company. All rights reserved.

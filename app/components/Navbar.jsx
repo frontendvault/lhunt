@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className=" text-white shadow-md absolute w-screen">
+    <nav className=" text-white absolute w-screen">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         <div className="text-lg font-bold logo-bg w-[372px] h-[140px] flex items-center justify-center">
           <Link href="#">

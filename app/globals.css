@@ -114,7 +114,10 @@ h6 {
 .presale-item-bg {
   background: url(/images/presale-item-bg.svg) no-repeat left center;
 }
-
+.presale-item-bg:hover {
+  background: url(/images/presale-item-bg-hover.svg) no-repeat left center;
+  @apply duration-300;
+}
 .casino-metaverse {
   background: url(/images/casino-metverse-bg.png) no-repeat top center;
   background-attachment: unset;
@@ -186,6 +189,10 @@ h6 {
 .token-details h4 {
   @apply text-yellow-custom;
 }
+.exclusive-events .slick-current {
+  background: url(/images/carousel-item-bg.png) no-repeat -64px -62px;
+  @apply lg:h-[412px] lg:w-[880px];
+}
 .roadmap-bg {
   background: url(/images/road-map-bg.png) no-repeat center -200px;
   background-attachment: initial;
@@ -199,6 +206,9 @@ h6 {
 }
 .big-button {
   background: url(/images/btn-big-bg.svg) no-repeat center center;
+}
+.common-btn-md {
+  background: url(/images/common-btn-md.svg) no-repeat center center;
 }
 .roadmap-item-bg {
   background: url(/images/roadmap-item-bg.svg) no-repeat top center;

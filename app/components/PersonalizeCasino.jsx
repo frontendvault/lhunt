@@ -132,9 +132,9 @@ export default function PersonalizeCasino () {
 
         <div className=' p-6 rounded-lg text-center flex items-center justify-center lg:w-[1000px] h-[600px] casino-bg-shade mx-auto'>
           <Image src={'/images/casino-1.png'} height={403} width={776} className='lg:mt-[150px]' />
-          <div className='absolute mt-20'>
-            <h2 className='text-xl font-bold mb-4'>
-              {nestedTabs[mainTab].section}
+          <div className='absolute mt-20 bg-white'>
+            <h2 className='text-xl font-bold mb- '>
+            text content:  {nestedTabs[mainTab].section}
             </h2>
             <p>{nestedTabs[mainTab].items[nestedTab].content}</p>
           </div>

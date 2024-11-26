@@ -58,9 +58,8 @@ const ExclusiveEvents = () => {
   }
 
   return (
-    <div className='bg-black text-white'>
-      <div className='container mx-auto px-4 py-8'>
-        {/* First Row: Heading + Button */}
+    <div className='bg-black text-white exclusive-events'>
+      <div className=' lg:w-[1600px] mx-auto px-4 py-8'>
         <div className='flex justify-between items-center mb-8'>
           <div>
             <h2 className=''>Host Exclusive Events</h2>
@@ -71,26 +70,23 @@ const ExclusiveEvents = () => {
             </p>
           </div>
           <div>
-            <button className='px-6 py-2 text-white big-button md:h-[100px] md:w-[430px] '>
+            <button className='px-6 py-2 text-white big-button md:h-[100px] md:w-[43    0px] '>
               EXPLORE THE CITIES
             </button>
           </div>
         </div>
 
-        {/* Second Row: Carousel */}
         <Slider {...settings} className='space-x-4'>
           {cards.map((card, index) => (
             <div key={index} className='p-4 h-[356px]'>
-              <div className='flex  rounded-lg shadow-md overflow-hidden'>
-                {/* Image Section */}
+              <div className='flex  rounded-lg shadow-md overflow-hidden mt-2 ml-5 pr-24'>
                 <Image
                   src={card.image}
                   alt={card.title}
                   width={296}
                   height={318}
+                  className='mr-2'
                 />
-
-                {/* Text Section */}
                 <div className=' p-4 flex flex-col'>
                   <h3 className='text-3xl font-semibold mb-2'>{card.title}</h3>
                   <p className='flex-grow text-base leading-6'>

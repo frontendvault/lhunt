@@ -12,27 +12,26 @@ const TokenDetails = () => {
             quasi odio, maxime quibusdam est omnis magni dolores minus accusamus
             aliquam!
           </p>
-
-          <div className='grid grid-cols-3  text-3xl'>
-            <div className='py-5'>
+          <div className='grid grid-cols-3  text-3xl border-b border-yellow-600 border-dashed lg:w-[80%]'>
+            <div className='p-5 border-r border-yellow-600 border-dashed'>
               <h4 className='text-3xl mb-4'>Token Name</h4>
               <p>LUCKYHUNTER</p>
             </div>
-            <div className='py-5'>
+            <div className='p-5 border-r border-yellow-600 border-dashed'>
               <h4 className='text-3xl mb-4'>Token Symbol</h4>
               <p>$LHUNT</p>
             </div>
-            <div className='py-5'>
+            <div className='p-5'>
               <h4 className='text-3xl mb-4'>Token Type</h4>
               <p>ETH</p>
             </div>
           </div>
-          <div className='grid grid-cols-2 text-3xl'>
-            <div className='py-5'>
+          <div className='flex text-3xl lg:w-[80%]'>
+            <div className='p-5 border-r border-yellow-600 border-dashed'>
               <h4 className='text-3xl mb-4'>Contact Token Address</h4>
               <p>e7d74fd9f22b499186aeac2efd686d27</p>
             </div>
-            <div className='py-5'>
+            <div className='p-5'>
               <div className='mx-auto w-[165px]'>
                 <h4 className='text-3xl mb-4'>Decimals</h4>
                 <p>18</p>

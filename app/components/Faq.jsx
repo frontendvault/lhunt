@@ -28,8 +28,8 @@ const FAQ = () => {
 
   return (
     <div className="faq-bg text-white">
-    <div className=" md:w-[1320px] text-center mx-auto px-4 py-8 ">
-      <h2 className="font-bold  mb-8">Frequently Asked Questions</h2>
+    <div className=" md:w-[1320px] text-center mx-auto px-4 py-8  ">
+      <h2 className="font-bold  mb-8 -mt-24">Frequently Asked Questions</h2>
       <p>Nulla lacinia, mauris et condimentum dapibus, nisl mi commodo velit,</p>
 
       <div className="mt-6">
@@ -70,7 +70,7 @@ const FAQ = () => {
         <div className="text-center mt-6">
           <button
             onClick={showMore}
-            className="px-10 py-3 bg-blue-600 text-white common-button"
+            className="px-10 py-3 text-white common-btn-md lg:h-[150px] md:w-[350px]"
           >
             View More
           </button>
