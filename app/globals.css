@@ -151,6 +151,7 @@ h6 {
 }
 .token-details { background: url(/images/token-detail-bg.png) no-repeat top center}
 .token-details-right { background: url(/images/token-detail-right.png) no-repeat -40px -30px}
+
 .token-details h4 {
   @apply text-yellow-custom;
 }

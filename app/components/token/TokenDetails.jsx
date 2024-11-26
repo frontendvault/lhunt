@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const TokenDetails = () => {
@@ -6,7 +7,7 @@ const TokenDetails = () => {
       <div className=' lg:w-[1185px] lg:h-[638px] mx-auto flex  justify-between p-20 text-white relative'>
         <div className='flex flex-col'>
           <h2 className='uppercase'>Token Details</h2>
-          <p>
+          <p className='w-[80%]'>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
             quasi odio, maxime quibusdam est omnis magni dolores minus accusamus
             aliquam!
@@ -39,18 +40,26 @@ const TokenDetails = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-col token-details-right absolute lg:right-[-150px] lg:w-[370px] lg:h-[510px] lg:p-16 text-center'>
-          <div className='mb-4'>
-            <h4 className='text-3xl'>Pre-sale Details</h4>
-            <p>The pre-sale is live</p>
-          </div>
-          <div className='mb-4'>
-            <h4 className='text-3xl'>Current $LHUNT Price</h4>
-            <p>1 $LHUNT = $0.001</p>
-          </div>
-          <div className='mb-4'>
-            <h4 className='text-3xl'>Exchange Listing Price</h4>
-            <p>1 $LHUNT = $0.001</p>
+        <div className='flex flex-col token-details-right absolute lg:right-[-150px] lg:w-[370px] lg:h-[510px] lg:p-16 text-center '>
+          <div>
+            <Image
+              src='/images/dice.png'
+              width={400}
+              height={300}
+              className='absolute -top-44 left-0 '
+            />
+            <div className='mb-4 mt-10'>
+              <h4 className='text-3xl mb-3'>Pre-sale Details</h4>
+              <p>The pre-sale is live</p>
+            </div>
+            <div className='mb-4'>
+              <h4 className='text-3xl mb-3'>Current $LHUNT Price</h4>
+              <p>1 $LHUNT = $0.001</p>
+            </div>
+            <div className='mb-4'>
+              <h4 className='text-3xl mb-3'>Exchange Listing Price</h4>
+              <p>1 $LHUNT = $0.001</p>
+            </div>
           </div>
         </div>
       </div>
