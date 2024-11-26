@@ -38,75 +38,77 @@ export default function PersonalizeCasino () {
       ]
     },
     {
-        section: 'Content for Tab 1',
-        items: [
-          {
-            img: '/images/personalise-casino-nested-item4.png',
-            content: 'content1'
-            //   imgBig: '/images/personalise-casino-nested-item4.png'
-          },
-          {
-            img: '/images/personalise-casino-nested-item4.png',
-            content: 'Nested Tab 2 Content for Tab 2'
-            //   imgBig: '/images/personalise-casino-nested-item4.png'
-          },
-          {
-            img: '/images/personalise-casino-nested-item4.png',
-            content: 'Nested Tab 3 Content for Tab 2'
-            //   imgBig: '/images/personalise-casino-nested-item4.png'
-          },
-          {
-            img: '/images/personalise-casino-nested-item4.png',
-            content: 'Nested Tab 4 Content for Tab 2'
-            //   imgBig: '/images/personalise-casino-nested-item4.png'
-          },
-          {
-            img: '/images/personalise-casino-nested-item4.png',
-            content: 'Nested Tab 5 Content for Tab 2'
-            //   imgBig: '/images/personalise-casino-nested-item4.png'
-          }
-        ]
-      },
-      {
-        section: 'Content for Tab 1',
-        items: [
-          {
-            img: '/images/personalise-casino-nested-item4.png',
-            content: 'Nested Tab 1 Content for Tab 3'
-            //   imgBig: '/images/personalise-casino-nested-item4.png'
-          },
-          {
-            img: '/images/personalise-casino-nested-item4.png',
-            content: 'Nested Tab 2 Content for Tab 3'
-            //   imgBig: '/images/personalise-casino-nested-item4.png'
-          },
-          {
-            img: '/images/personalise-casino-nested-item4.png',
-            content: 'Nested Tab 3 Content for Tab 3'
-            //   imgBig: '/images/personalise-casino-nested-item4.png'
-          },
-          {
-            img: '/images/personalise-casino-nested-item4.png',
-            content: 'Nested Tab 4 Content for Tab 3'
-            //   imgBig: '/images/personalise-casino-nested-item4.png'
-          },
-          {
-            img: '/images/personalise-casino-nested-item4.png',
-            content: 'Nested Tab 5 Content for Tab 3'
-            //   imgBig: '/images/personalise-casino-nested-item4.png'
-          }
-        ]
-      },
-      
+      section: 'Content for Tab 1',
+      items: [
+        {
+          img: '/images/personalise-casino-nested-item4.png',
+          content: 'content1'
+          //   imgBig: '/images/personalise-casino-nested-item4.png'
+        },
+        {
+          img: '/images/personalise-casino-nested-item4.png',
+          content: 'Nested Tab 2 Content for Tab 2'
+          //   imgBig: '/images/personalise-casino-nested-item4.png'
+        },
+        {
+          img: '/images/personalise-casino-nested-item4.png',
+          content: 'Nested Tab 3 Content for Tab 2'
+          //   imgBig: '/images/personalise-casino-nested-item4.png'
+        },
+        {
+          img: '/images/personalise-casino-nested-item4.png',
+          content: 'Nested Tab 4 Content for Tab 2'
+          //   imgBig: '/images/personalise-casino-nested-item4.png'
+        },
+        {
+          img: '/images/personalise-casino-nested-item4.png',
+          content: 'Nested Tab 5 Content for Tab 2'
+          //   imgBig: '/images/personalise-casino-nested-item4.png'
+        }
+      ]
+    },
+    {
+      section: 'Content for Tab 1',
+      items: [
+        {
+          img: '/images/personalise-casino-nested-item4.png',
+          content: 'Nested Tab 1 Content for Tab 3'
+          //   imgBig: '/images/personalise-casino-nested-item4.png'
+        },
+        {
+          img: '/images/personalise-casino-nested-item4.png',
+          content: 'Nested Tab 2 Content for Tab 3'
+          //   imgBig: '/images/personalise-casino-nested-item4.png'
+        },
+        {
+          img: '/images/personalise-casino-nested-item4.png',
+          content: 'Nested Tab 3 Content for Tab 3'
+          //   imgBig: '/images/personalise-casino-nested-item4.png'
+        },
+        {
+          img: '/images/personalise-casino-nested-item4.png',
+          content: 'Nested Tab 4 Content for Tab 3'
+          //   imgBig: '/images/personalise-casino-nested-item4.png'
+        },
+        {
+          img: '/images/personalise-casino-nested-item4.png',
+          content: 'Nested Tab 5 Content for Tab 3'
+          //   imgBig: '/images/personalise-casino-nested-item4.png'
+        }
+      ]
+    }
   ]
 
   return (
-    <div className='p-4 space-y-6 casino-empire-bg lg:h-[800px]'>
-      <div className='container mx-auto'>
-        <h2 className=' text-white flex justify-between '>
-          <span className='lg:text-[165px]'>Personalize</span>
-          <span className='lg:text-[70px]'>Your Casino Empire</span>
+    <div className='p-4 space-y-6 casino-empire-bg relative '>
+ 
+       <h2 className=' text-white flex justify-between container mx-auto lg:mt-[60px] items-start'>
+          <span className='lg:text-[165px] -mt-9 lg:ml-10 special-text'>Personalize</span>
+          <span className='lg:text-[70px] lg:mt-3 lg:leading-[80px] flex justify-center lg:pl-10'>Your Casino Empire</span>
         </h2>
+       
+      <div className='container mx-auto'>
+      
         <div className='flex justify-center space-x-2'>
           {mainTabs.map((tab, index) => (
             <button
@@ -115,7 +117,7 @@ export default function PersonalizeCasino () {
                 setMainTab(index)
                 setNestedTab(0) // Reset nested tab on main tab switch
               }}
-              className={` px-5 py-4 rounded-lg md:text-[40px] uppercase font-bold md:w-[420px] text-left tabbed-main-bg md:h-[170px] text-white flex justify-between items-center ${
+              className={` px-5 py-4 outline-0 rounded-lg md:text-[40px] uppercase font-bold md:w-[420px] text-left tabbed-main-bg md:h-[170px] text-white flex justify-between items-center ${
                 mainTab === index
                   ? 'bg-blue-500 text-white'
                   : 'bg-gray-200 text-gray-800'
@@ -123,22 +125,22 @@ export default function PersonalizeCasino () {
             >
               {tab}
 
-              <Image src={"/images/yellow-bullet.png"} width={52} height={52}/>
+              <Image src={'/images/yellow-bullet.png'} width={52} height={52} />
             </button>
           ))}
         </div>
 
-        <div className=' p-6 rounded-lg text-center flex items-center justify-center h-[600px] casino-bg-shade'>
-          <Image src={'/images/casino-1.png'} height={403} width={776} />
-         <div className="absolute mt-20">
-         <h2 className='text-xl font-bold mb-4'>
-            {nestedTabs[mainTab].section}
-          </h2>
-          <p>{nestedTabs[mainTab].items[nestedTab].content}</p>
-         </div>
+        <div className=' p-6 rounded-lg text-center flex items-center justify-center lg:w-[1000px] h-[600px] casino-bg-shade mx-auto'>
+          <Image src={'/images/casino-1.png'} height={403} width={776} className='lg:mt-[150px]' />
+          <div className='absolute mt-20'>
+            <h2 className='text-xl font-bold mb-4'>
+              {nestedTabs[mainTab].section}
+            </h2>
+            <p>{nestedTabs[mainTab].items[nestedTab].content}</p>
+          </div>
         </div>
 
-        <div className='flex justify-center space-x-4'>
+        <div className='flex justify-center space-x-4 lg:mt-10'>
           {nestedTabs[mainTab].items.map((tab, index) => (
             <button
               key={index}
@@ -156,6 +158,7 @@ export default function PersonalizeCasino () {
           ))}
         </div>
       </div>
-    </div>
+      </div>
+
   )
 }

@@ -78,7 +78,6 @@ export default function LuckhunterMetaverse () {
               }`}
             >
               <div>
-                {' '}
                 <Image
                   src={tab.imgSmall}
                   width={159}

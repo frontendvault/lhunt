@@ -997,6 +997,9 @@ video {
 .-mt-8 {
   margin-top: -2rem;
 }
+.-mt-9 {
+  margin-top: -2.25rem;
+}
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -1130,6 +1133,9 @@ video {
 .flex-col {
   flex-direction: column;
 }
+.items-start {
+  align-items: flex-start;
+}
 .items-end {
   align-items: flex-end;
 }
@@ -1153,6 +1159,11 @@ video {
 }
 .gap-8 {
   gap: 2rem;
+}
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -1178,11 +1189,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .overflow-hidden {
   overflow: hidden;
@@ -1497,6 +1503,9 @@ video {
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.outline-0 {
+  outline-width: 0px;
+}
 .drop-shadow-2xl {
   --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1512,11 +1521,11 @@ video {
   transition-duration: 150ms;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap'); */
 p,
 ul {
-  /* @apply font-orbit; */
-  font-family: 'Orbit', sans-serif;
+  font-family: Orbit, sans-serif;
+  font-family: 'Orbit', sans-serif!important;
   font-weight: 400;
   font-style: normal;
 }
@@ -1560,9 +1569,15 @@ h6 {
 .logo-bg {
   background: url(/images/logo-bg.svg) no-repeat top left;
 }
+.special-text{ color: transparent;    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;}
 .night-sky-stars-bg {
-  background: url(/images/luckhunter-comparison-bg.png) no-repeat center center;   background-attachment: unset;   background-size: cover;
+  background: url(/images/luckhunter-comparison-bg.png) no-repeat left center;   background-attachment: unset;   background-size: cover;
 }
+.night-bg {  background: url(/images/personalise-shaded-bg.png) no-repeat left center;  background-size: cover}
+.comparison-bg { background:url(/images/comparison-bg.png) no-repeat 0 -100px ;
+  padding-bottom: 300px;
+  background-size: cover}
 .comparison-chart-bg { background:url(/images/comparison-chart-bg.png) no-repeat center center ;}
 .common-button {
   box-shadow: 25px 25px 164px 0px rgba(0, 170, 255, 0.3) inset;
@@ -1586,7 +1601,7 @@ h6 {
 }
 .casino-empire-bg {
   background: url(/images/personalize-bg.png) no-repeat center center;
-  background-attachment: unset;
+  background-attachment:initial;
   background-size: cover;
 }
 .casino-bg-shade {
@@ -1626,7 +1641,7 @@ h6 {
 .become-lockhunter-bg {
   background: url(/images/lockhunter-bg.png) no-repeat center bottom;   background-attachment: unset;
   background-size: cover;
-  padding-top: 400px;
+
 }
 .own-casino-itemn-bg { background: url(/images/own-casino-itemn-bg.png) no-repeat top center;}
 .tabbed-main-bg { background: url(/images/tabbed-main.png) no-repeat center center;}
@@ -1714,10 +1729,6 @@ h6 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity, 1));
 }
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1779,8 +1790,8 @@ h6 {
     width: 320px;
   }
 
-  .md\:w-\[400px\] {
-    width: 400px;
+  .md\:w-\[420px\] {
+    width: 420px;
   }
 
   .md\:w-\[50\%\] {
@@ -1789,10 +1800,6 @@ h6 {
 
   .md\:w-\[70\%\] {
     width: 70%;
-  }
-
-  .md\:w-\[420px\] {
-    width: 420px;
   }
 
   .md\:grid-cols-2 {
@@ -1872,6 +1879,26 @@ h6 {
     margin-top: -100px;
   }
 
+  .lg\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .lg\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
+  .lg\:mt-\[150px\] {
+    margin-top: 150px;
+  }
+
+  .lg\:mt-\[60px\] {
+    margin-top: 60px;
+  }
+
   .lg\:h-\[1100px\] {
     height: 1100px;
   }
@@ -1896,16 +1923,16 @@ h6 {
     height: 638px;
   }
 
-  .lg\:h-\[800px\] {
-    height: 800px;
-  }
-
   .lg\:h-\[900px\] {
     height: 900px;
   }
 
   .lg\:h-screen {
     height: 100vh;
+  }
+
+  .lg\:w-\[1000px\] {
+    width: 1000px;
   }
 
   .lg\:w-\[1185px\] {
@@ -1956,12 +1983,20 @@ h6 {
     padding: 4rem;
   }
 
+  .lg\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
   .lg\:text-\[165px\] {
     font-size: 165px;
   }
 
   .lg\:text-\[70px\] {
     font-size: 70px;
+  }
+
+  .lg\:leading-\[80px\] {
+    line-height: 80px;
   }
 }
 @media (prefers-color-scheme: dark) {

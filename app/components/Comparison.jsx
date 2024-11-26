@@ -27,7 +27,7 @@ const Comparison = () => {
   ]
 
   return (
-    <div className='luckhunter-comparison-bg'>
+    <div className='comparison-bg'>
       <div className='lg:w-[1360px] mx-auto px-4 py-8'>
         {/* Comparison Table */}
         <h2 className='text-yellow-custom md:w-[70%] mb-8 '>
