@@ -95,6 +95,11 @@ h6 {
   background: url(/images/presale-form-bg.png) no-repeat center center;    background-attachment: unset;
   @apply bg-cover;
 }
+.presale-item-bg {
+  background: url(/images/presale-item-bg.svg) no-repeat left center; 
+}
+
+
 .casino-metaverse {
   background: url(/images/casino-metverse-bg.png) no-repeat top center;   background-attachment: unset;
   @apply bg-cover;
