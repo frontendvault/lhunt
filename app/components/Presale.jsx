@@ -26,7 +26,6 @@ const Presale = () => {
     <div className='presale-bg bg-black'>
       <div className='container mx-auto px-6 py-4'>
         <div className='flex flex-col md:flex-row gap-8'>
-          {/* Left Column */}
           <div className='flex-1 text-white'>
             <h2 className='font-semibold  mb-4 -mt-6'>PRESALE IS LIVE</h2>
             <p className=' mb-6'>
@@ -34,8 +33,7 @@ const Presale = () => {
               what the boxes below are about and how they relate to the main
               heading.
             </p>
-            {/* Boxes */}
-            <div className='space-y-4'>
+            <div className='space-y-4 lg:ml-[60px] md:mt-10'>
               {boxes.map((box, index) => (
                 <div
                   key={index}
@@ -54,9 +52,8 @@ const Presale = () => {
               ))}
             </div>
           </div>
-
-          <div className='flex-1 presale-form-bg lg:w-[700px] lg:h-[900px] flex items-center justify-center'>
-            <form className='p-10 lg:w-[88%]  mx-auto  shadow rounded space-y-6 border border-sky-500 text-white bg-gradient-to-r from-sky-400/20 to-sky-600/30 inner-shadow'>
+          <div className='flex-1 presale-form-bg lg:w-[700px] lg:h-[920px] flex items-center justify-center'>
+            <form className='p-10 lg:w-[90%]  mx-auto  shadow rounded space-y-6 border border-sky-500 text-white bg-gradient-to-r from-sky-400/20 to-sky-600/30 inner-shadow'>
               <div>
                 <div className='flex justify-between text-yellow-custom mb-2'>
                   <span>Presale Stage 1</span>
@@ -72,11 +69,9 @@ const Presale = () => {
                   <span>Target : $252222</span>
                 </div>
               </div>
-
               <h3 className='border-y text-2xl font-bold text-center text-white py-5 '>
                 1 LHUNT = $0.001
               </h3>
-
               <div className='flex justify-between space-x-4 '>
                 <button
                   type='button'
@@ -91,37 +86,61 @@ const Presale = () => {
                   Next Price $0.001(+400%)
                 </button>
               </div>
-
               <div className='grid grid-cols-5 gap-4'>
                 <button
                   type='button'
-                  className='py-2 border border-gray-400 hover:bg-red-500 text-white font-semibold rounded shadow h-[53px]'
+                  className='py-2 border border-gray-400  text-white font-semibold h-[53px] hover:bg-gradient-to-r :hoverfrom-indigo-500 via-purple-500 to-purple-800'
                 >
-                  <Image src={'/images/eth.svg'} width={48} height={21} className='mx-auto'/>
+                  <Image
+                    src={'/images/eth.svg'}
+                    width={48}
+                    height={21}
+                    className='mx-auto'
+                  />
                 </button>
                 <button
                   type='button'
-                  className='py-2 border border-gray-400 hover:bg-yellow-500 text-white font-semibold'
+                  className='py-2 border border-gray-400  text-white font-semibold h-[53px] hover:bg-gradient-to-r :hoverfrom-indigo-500 via-purple-500 to-purple-800'
                 >
-                  <Image src={'/images/usdt.svg'} width={64} height={21} className='mx-auto'/>
+                  <Image
+                    src={'/images/usdt.svg'}
+                    width={64}
+                    height={21}
+                    className='mx-auto'
+                  />
                 </button>
                 <button
                   type='button'
-                  className='py-2 border border-gray-400 hover:bg-blue-500 text-white font-semibold'
+                  className='py-2 border border-gray-400 hover:bg-blue-500 text-white h-[53px] hover:bg-gradient-to-r :hoverfrom-indigo-500 via-purple-500 to-purple-800'
                 >
-                  <Image src={'/images/bnb.svg'} width={58} height={21} className='mx-auto' />
+                  <Image
+                    src={'/images/bnb.svg'}
+                    width={58}
+                    height={21}
+                    className='mx-auto'
+                  />
                 </button>
                 <button
                   type='button'
-                  className='py-2 border border-gray-400 hover:bg-green-500 text-white font-semibold'
+                  className='py-2 border border-gray-400 hover:bg-green-500 text-white h-[53px] hover:bg-gradient-to-r :hoverfrom-indigo-500 via-purple-500 to-purple-800'
                 >
-                  <Image src={'/images/matic.svg'} width={71} height={21} className='mx-auto' />
+                  <Image
+                    src={'/images/matic.svg'}
+                    width={71}
+                    height={21}
+                    className='mx-auto'
+                  />
                 </button>
                 <button
                   type='button'
-                  className='py-2 border border-gray-400 hover:bg-purple-500 text-white font-semibold'
+                  className='py-2 border border-gray-400 hover:bg-purple-500 text-white h-[53px] hover:bg-gradient-to-r :hoverfrom-indigo-500 via-purple-500 to-purple-800'
                 >
-                  <Image src={'/images/card.svg'} width={69} height={21} className='mx-auto' />
+                  <Image
+                    src={'/images/card.svg'}
+                    width={69}
+                    height={21}
+                    className='mx-auto'
+                  />
                 </button>
               </div>
               <div className='space-y-2'>
@@ -142,10 +161,10 @@ const Presale = () => {
                     <Image
                       src={'/images/eth.svg'}
                       height={22}
-                      width={22}
+                      width={60}
                       className='mr-1'
                     />
-                    eth
+              
                   </div>
                 </div>
                 <label

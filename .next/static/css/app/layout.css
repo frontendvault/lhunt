@@ -1069,6 +1069,12 @@ video {
 .mr-1 {
   margin-right: 0.25rem;
 }
+.ml-4 {
+  margin-left: 1rem;
+}
+.ml-9 {
+  margin-left: 2.25rem;
+}
 .block {
   display: block;
 }
@@ -1388,11 +1394,21 @@ video {
   --tw-gradient-to: rgb(112 26 117 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), rgb(112 26 117 / 0.2) var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
+.via-purple-500 {
+  --tw-gradient-to: rgb(168 85 247 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #a855f7 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
 .to-sky-600\/30 {
   --tw-gradient-to: rgb(2 132 199 / 0.3) var(--tw-gradient-to-position);
 }
 .to-sky-900\/20 {
   --tw-gradient-to: rgb(12 74 110 / 0.2) var(--tw-gradient-to-position);
+}
+.to-pink-500 {
+  --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
+}
+.to-purple-800 {
+  --tw-gradient-to: #6b21a8 var(--tw-gradient-to-position);
 }
 .stroke-yellow-500 {
   stroke: #eab308;
@@ -1810,6 +1826,9 @@ h6 {
   box-shadow: 25px 25px 164px 0px rgba(0, 170, 255, 0.3) inset;
   backdrop-filter: blur(64px);
 }
+.hover\:border-transparent:hover {
+  border-color: transparent;
+}
 .hover\:bg-blue-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
@@ -1840,6 +1859,9 @@ h6 {
 }
 .hover\:bg-gradient-to-b:hover {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+.hover\:bg-gradient-to-r:hover {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 .hover\:text-gray-300:hover {
   --tw-text-opacity: 1;
@@ -1872,6 +1894,10 @@ h6 {
 
   .md\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .md\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .md\:block {
@@ -2019,6 +2045,18 @@ h6 {
     margin-top: 60px;
   }
 
+  .lg\:ml-\[50pxc\] {
+    margin-left: 50pxc;
+  }
+
+  .lg\:ml-\[50px\] {
+    margin-left: 50px;
+  }
+
+  .lg\:ml-\[60px\] {
+    margin-left: 60px;
+  }
+
   .lg\:h-\[1100px\] {
     height: 1100px;
   }
@@ -2049,6 +2087,18 @@ h6 {
 
   .lg\:h-screen {
     height: 100vh;
+  }
+
+  .lg\:h-\[880px\] {
+    height: 880px;
+  }
+
+  .lg\:h-\[940px\] {
+    height: 940px;
+  }
+
+  .lg\:h-\[920px\] {
+    height: 920px;
   }
 
   .lg\:w-\[1000px\] {
@@ -2097,6 +2147,14 @@ h6 {
 
   .lg\:w-\[90\%\] {
     width: 90%;
+  }
+
+  .lg\:w-\[750px\] {
+    width: 750px;
+  }
+
+  .lg\:w-\[87\%\] {
+    width: 87%;
   }
 
   .lg\:grid-cols-4 {
