@@ -2,9 +2,9 @@ import React from 'react'
 
 const TokenDetails = () => {
   return (
-    <div className='token-details  mx-auto flex night-sky-stars-bg'>
+    <div className='token-details  mx-auto flex night-sky-stars-bg md:mt-48'>
       <div className=' lg:w-[1185px] lg:h-[638px] mx-auto flex  justify-between p-20 text-white relative'>
-        <div  className='flex flex-col'>
+        <div className='flex flex-col'>
           <h2 className='uppercase'>Token Details</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
@@ -12,28 +12,30 @@ const TokenDetails = () => {
             aliquam!
           </p>
 
-          <div className='flex '>
-            <div>
-              <h4 className='text-3xl'>Token Name</h4>
+          <div className='grid grid-cols-3  text-3xl'>
+            <div className='py-5'>
+              <h4 className='text-3xl mb-4'>Token Name</h4>
               <p>LUCKYHUNTER</p>
             </div>
-            <div>
-              <h4 className='text-3xl'>Token Symbol</h4>
+            <div className='py-5'>
+              <h4 className='text-3xl mb-4'>Token Symbol</h4>
               <p>$LHUNT</p>
             </div>
-            <div>
-              <h4 className='text-3xl'>Token Type</h4> 
+            <div className='py-5'>
+              <h4 className='text-3xl mb-4'>Token Type</h4>
               <p>ETH</p>
             </div>
           </div>
-          <div className='flex'>
-            <div>
-              <h4 className='text-3xl'>Contact Token Address</h4>
+          <div className='grid grid-cols-2 text-3xl'>
+            <div className='py-5'>
+              <h4 className='text-3xl mb-4'>Contact Token Address</h4>
               <p>e7d74fd9f22b499186aeac2efd686d27</p>
             </div>
-            <div>
-              <h4 className='text-3xl'>Decimals</h4> 
-              <p>18</p>
+            <div className='py-5'>
+              <div className='mx-auto w-[165px]'>
+                <h4 className='text-3xl mb-4'>Decimals</h4>
+                <p>18</p>
+              </div>
             </div>
           </div>
         </div>
