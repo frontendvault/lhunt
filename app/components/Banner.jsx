@@ -2,13 +2,13 @@ import React from 'react'
 
 const Banner = () => {
   return (
-    <section className='bg-blue-600 text-white py-12 banner-bg flex items-end lg:h-screen'>
+    <section className='text-white py-12 banner-bg flex items-end md:h-screen'>
       <div className='container mx-auto px-4 text-center md:text-left'>
         <div className='drop-shadow-2xl	'>
-          <h1 className='md:!text-[100px] md:text-6xl font-bold leading-tight'>
+          <h1 className='text-5xl lg:!text-[100px] md:text-3xl  font-bold'>
             <span className='flex'>
               <span className='italic text-yellow-custom'>Rent. &nbsp;</span>
-              <span className='stroke-yellow-500'> Play. Own.</span>
+              <span className='stroke-yellow-500 special-text-yellow'> Play. Own.</span>
             </span>
             IN THE WORLDS FIRST <br /> CASINO METAVERSE
           </h1>

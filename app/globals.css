@@ -16,10 +16,11 @@ ul {
 body {
   @apply bg-black;
 }
+h1 { line-height: 110px!important;}
 h1,
 h2 {
-  font-size: 80px;
-  @apply font-bold uppercase;
+
+  @apply text-4xl lg:text-[80px]  font-bold uppercase leading-normal;
 }
 h3 {
   @apply text-[60px] uppercase font-bold;
@@ -47,6 +48,10 @@ h6 {
 }
 .logo-bg {
   background: url(/images/logo-bg.svg) no-repeat top left;
+}
+.special-text-yellow {  color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgba(255, 175, 58, 1);;
 }
 .special-text {
   color: transparent;
@@ -90,7 +95,7 @@ h6 {
 }
 .banner-bg {
   background: url(/images/banner-bg.svg) no-repeat left -180px;
-  background-attachment: unset;
+  
 
   @apply md:h-screen bg-cover;
 }

@@ -24,7 +24,7 @@ const Presale = () => {
 
   return (
     <div className='presale-bg bg-black'>
-      <div className='container mx-auto px-6 py-4'>
+      <div className='container mx-auto px-6 py-24'>
         <div className='flex flex-col md:flex-row gap-8'>
           <div className='flex-1 text-white'>
             <h2 className='font-semibold  mb-4 -mt-6'>PRESALE IS LIVE</h2>
@@ -37,7 +37,7 @@ const Presale = () => {
               {boxes.map((box, index) => (
                 <div
                   key={index}
-                  className='shadow-md py-4 presale-item-bg h-[195px] lg:w-[440px]'
+                  className='shadow-md p-4 lg:py-4 presale-item-bg h-[195px] lg:w-[440px]'
                 >
                   <div className='lg:w-[90%] mx-auto'>
                     <span className='text-4xl font-black text-yellow-custom'>
