@@ -36,7 +36,7 @@ export default function HowItWorks () {
   return (
     <div className=' md:py-[50px]  howit-works-bg'>
       <div className='container mx-auto howit-work-diagram lg:py-[100px]'>
-          <h2 className=' text-white text-center mb-5'>{data.heading}</h2>
+          <h2 className=' text-white text-center mb-4 md:mb-5'>{data.heading}</h2>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
           {data.secondRow.map((item, index) => (
             <div key={index} className='text-center space-y-4 w-44 mx-auto'>
