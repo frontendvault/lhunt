@@ -10,7 +10,7 @@ const Banner = () => {
               <span className='italic text-yellow-custom'>Rent. &nbsp;</span>
               <span className='stroke-yellow-500 special-text-yellow'> Play. Own.</span>
             </span>
-            IN THE WORLDS FIRST <br /> CASINO METAVERSE
+            IN THE WORLDS FIRST <div className=' hidden md:flex'></div>  CASINO METAVERSE
           </h1>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6 items-center '>

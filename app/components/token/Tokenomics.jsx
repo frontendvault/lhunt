@@ -2,8 +2,8 @@ const Tokenomics = () => {
   return (
     <div className='container mx-auto px-6 py-8 text-white'>
       <div className='mb-6 md:w-[50%]'>
-        <h2 className='text-[80px] font-bold '>Tokenomics</h2>
-        <p className='mt-2 text-lg '>
+        <h2 className='text-3xl md:text-[80px] font-bold '>Tokenomics</h2>
+        <p className='mt-2 text-base md:text-lg '>
           Nulla lacinia, mauris et condimentum dapibus, nisl mi commodo velit,
           vel dapibus ante neque a lacus. Morbi lectus augue, congue vel
           facilisis non, tristique eget enim. Praesent ut erat mattis, imperdiet

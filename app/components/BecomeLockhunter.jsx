@@ -28,12 +28,12 @@ const BecomeLockhunter = () => {
       <div className='container mx-auto px-4 py-8 '>
         <h2 className='text-center mb-8 text-white relative'>
           <span className='flex justify-center'> Become a </span>
-          <span className='text-[200px] text-yellow-custom -mt-20 flex justify-center'>LuckHunter</span>
-          <span className='flex justify-center lg:absolute w-full mt-[-130px]'>
+          <span className='tex-2xl md:text-[200px] text-yellow-custom -mt-20 flex justify-center'>LuckHunter</span>
+          <span className='flex justify-center lg:absolute w-full md:mt-[-130px]'>
             to Own a Casino
           </span>
         </h2>
-        <div className='flex items-end lg:h-[1100px] justify-between'>
+        <div className='flex items-end h-[399px] lg:h-[1100px] justify-between'>
          
           {columns.map((column, index) => (
             <div

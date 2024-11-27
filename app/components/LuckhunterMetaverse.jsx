@@ -36,11 +36,11 @@ export default function LuckhunterMetaverse () {
   ]
 
   return (
-    <div className='flex flex-col h-full space-y-6 casino-metaverse py-20'>
-      <div className=' lg:w-[1360px] mx-auto '>
+    <div className='flex flex-col h-full space-y-6 casino-metaverse py-5 md:py-20'>
+      <div className='w-screen lg:w-[1360px] mx-auto '>
         <div className='flex flex-col text-center text-white py-10 w-[100%] lg:w-[80%] lg:mx-auto mb-10'>
           <h3>What is LuckHunter Casino Metaverse?</h3>
-          <p className='text-lg'>
+          <p className='text-base md:text-lg'>
             LuckHunter brings the top 5 iconic casino capitals of the world to a
             metaverse experience, where you can own, lease, or rent casinos and
             gaming assets using LHUNT tokens.

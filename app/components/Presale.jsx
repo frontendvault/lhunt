@@ -24,7 +24,7 @@ const Presale = () => {
 
   return (
     <div className='presale-bg bg-black'>
-      <div className='container mx-auto px-6 py-24'>
+      <div className='container mx-auto px-6 py-10 md:py-24'>
         <div className='flex flex-col md:flex-row gap-8'>
           <div className='flex-1 text-white'>
             <h2 className='font-semibold  mb-4 -mt-6'>PRESALE IS LIVE</h2>
@@ -40,10 +40,10 @@ const Presale = () => {
                   className='shadow-md p-4 lg:py-4 presale-item-bg h-[195px] lg:w-[440px]'
                 >
                   <div className='lg:w-[90%] mx-auto'>
-                    <span className='text-4xl font-black text-yellow-custom'>
+                    <span className='text-2xl md:text-4xl font-black text-yellow-custom'>
                       0{box.number}
                     </span>
-                    <h3 className='text-3xl font-semibold mt-2'>
+                    <h3 className='text-xl md:text-3xl font-semibold mt-2'>
                       {box.heading}
                     </h3>
                     <p className='text-base  mt-2'>{box.description}</p>
@@ -52,7 +52,7 @@ const Presale = () => {
               ))}
             </div>
           </div>
-          <div className='flex-1 presale-form-bg lg:w-[700px] lg:h-[920px] flex items-center justify-center'>
+          <div className='flex-1 presale-form-bg w-full h-full lg:w-[700px] lg:h-[920px] flex items-center justify-center'>
             <form className='p-10 lg:w-[90%]  mx-auto  shadow rounded space-y-6 border border-sky-500 text-white bg-gradient-to-r from-sky-400/20 to-sky-600/30 inner-shadow'>
               <div>
                 <div className='flex justify-between text-yellow-custom mb-2'>

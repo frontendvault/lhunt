@@ -78,8 +78,8 @@ const ExclusiveEvents = () => {
 
         <Slider {...settings} className='space-x-4'>
           {cards.map((card, index) => (
-            <div key={index} className='p-4 h-[356px]'>
-              <div className='flex  rounded-lg shadow-md overflow-hidden mt-2 ml-5 pr-24'>
+            <div key={index} className='p-4 md:h-[356px]'>
+              <div className='flex flex-col md:flex-row  rounded-lg shadow-md overflow-hidden mt-2 md:ml-5 md:pr-24'>
                 <Image
                   src={card.image}
                   alt={card.title}
@@ -88,7 +88,7 @@ const ExclusiveEvents = () => {
                   className='mr-2'
                 />
                 <div className=' p-4 flex flex-col'>
-                  <h3 className='text-3xl font-semibold mb-2'>{card.title}</h3>
+                  <h3 className='text-xl md:text-3xl font-semibold mb-2'>{card.title}</h3>
                   <p className='flex-grow text-base leading-6'>
                     {card.description}
                   </p>

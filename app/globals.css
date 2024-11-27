@@ -265,3 +265,9 @@ h6 {
   box-shadow: 25px 25px 164px 0px rgba(0, 170, 255, 0.3) inset;
   backdrop-filter: blur(64px);
 }
+
+@media only screen and (max-width: 600px) {
+  h2 {font-size: 1.5rem}
+  h3 { 
+    @apply text-3xl;}
+}

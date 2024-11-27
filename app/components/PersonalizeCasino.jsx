@@ -102,7 +102,7 @@ export default function PersonalizeCasino () {
   return (
     <div className='p-4 space-y-6 casino-empire-bg relative '>
  
-       <h2 className=' text-white flex justify-between container mx-auto lg:mt-[60px] items-start'>
+       <h2 className=' text-white flex flex-col md:flex-row justify-between container mx-auto lg:mt-[60px] items-start'>
           <span className='lg:text-[165px] -mt-9 lg:ml-10 special-text'>Personalize</span>
           <span className='lg:text-[70px] lg:mt-3 lg:leading-[80px] flex justify-center lg:pl-10'>Your Casino Empire</span>
         </h2>
