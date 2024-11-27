@@ -167,9 +167,16 @@ h6 {
  
   @apply bg-cover;
 }
-
+.howit-works-bg{background: url(/images/presale-bg.png) no-repeat bottom center;
+@apply bg-cover
+}
+.howit-work-diagram { background: url(/images/how-it-works-diagram.png) no-repeat 70px 300px }
 .tokenomics-col {
   @apply border-dashed border-white border-b pb-3;
+}
+/* .explore-iconic-cities-bg {} */
+.explore-iconic-cities-item {
+ background: url(/images/explore-city-pg.png) no-repeat center center;
 }
 /* .luckhunter-comparison-bg, */
 .footer-bg{ background: url(/images/footer-main-bg.png) no-repeat left bottom;

@@ -8,28 +8,28 @@ export default function LuckhunterMetaverse () {
     {
       imgSmall: '/images/lease-casino.png',
       imgBig: '/images/lease-own-big.png',
-      title: 'OWN LEASE OR RENT CASINOS (slide 1)',
+      title: 'OWN LEASE OR RENT CASINOS ',
       description:
         'Nullam semper tempus sapien placerat accumsan. Sed pretium ut arcu vel fringilla. Duis accumsan, augue eget elementum dictum, libero odio lacinia felis.'
     },
     {
       imgSmall: '/images/customise-gaming-assets.png',
       imgBig: '/images/lease-own-big.png',
-      title: 'OWN LEASE OR RENT CASINOS (slide 2)',
+      title: 'OWN LEASE OR RENT CASINOS ',
       description:
         'Nullam semper tempus sapien placerat accumsan. Sed pretium ut arcu vel fringilla. Duis accumsan, augue eget elementum dictum, libero odio lacinia felis.'
     },
     {
       imgSmall: '/images/lhunt-tokens.png',
       imgBig: '/images/lease-own-big.png',
-      title: 'OWN LEASE OR RENT CASINOS (slide 3)',
+      title: 'OWN LEASE OR RENT CASINOS ',
       description:
         'Nullam semper tempus sapien placerat accumsan. Sed pretium ut arcu vel fringilla. Duis accumsan, augue eget elementum dictum, libero odio lacinia felis.'
     },
     {
       imgSmall: '/images/vip-rooms-events.png',
       imgBig: '/images/lease-own-big.png',
-      title: 'OWN LEASE OR RENT CASINOS (slide 4)',
+      title: 'OWN LEASE OR RENT CASINOS ',
       description:
         'Nullam semper tempus sapien placerat accumsan. Sed pretium ut arcu vel fringilla. Duis accumsan, augue eget elementum dictum, libero odio lacinia felis.'
     }
@@ -73,7 +73,7 @@ export default function LuckhunterMetaverse () {
               key={index}
               onClick={() => setActiveTab(index)}
               // css only: bg-gradient-to-b from-fuchsia-800/50 via-fuchsia-900/20
-              className={`metaverse-item flex-col flex justify-center rounded-lg text-center text-sm font-medium  h-[325px] w-[400px] relative ${
+              className={`metaverse-item cursor-pointer flex-col flex justify-center rounded-lg text-center text-sm font-medium  h-[325px] w-[400px] relative ${
                 activeTab === index ? ' ' : ''
               }`}
             >
