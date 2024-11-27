@@ -11,7 +11,7 @@ import FeaturedIn from "./components/FeaturedIn";
 import PersonalizeCasino from "./components/PersonalizeCasino";
 import LuckhunterMetaverse from "./components/LuckhunterMetaverse";
 import Token from "./components/token/Token";
-import HowItWorks from "./components/HowitWorks";
+// import HowItWorks from "./components/HowitWorks";
 import ExploreCities from "./components/ExploreCities";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
     <Banner/>
     <Presale/>
     <LuckhunterMetaverse/>
-    <HowItWorks/>
+    {/* <HowItWorks/> */}
     <ExploreCities/>
     <PersonalizeCasino/>
     <BecomeLockhunter/>
