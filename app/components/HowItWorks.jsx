@@ -52,7 +52,7 @@ export default function HowItWorks () {
             </div>
           ))}
         </div>
-        <div className='flex justify-evenly md:w-[86%] mx-auto mt-20 '>
+        <div className='flex justify-evenly md:w-[86%] mx-auto mt-10 md:mt-20 '>
           {data.thirdRow.map((item, index) => (
             <div key={index} className='p-6 text-center md:w-[300px] mx-50 mt-20'>
               <div
