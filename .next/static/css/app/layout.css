@@ -1445,6 +1445,9 @@ video {
 .p-10 {
   padding: 2.5rem;
 }
+.p-2 {
+  padding: 0.5rem;
+}
 .p-20 {
   padding: 5rem;
 }
@@ -1552,9 +1555,9 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .text-\[40px\] {
   font-size: 40px;
@@ -1574,10 +1577,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 .font-black {
   font-weight: 900;
@@ -1974,7 +1973,7 @@ h6 {
 @media only screen and (max-width: 600px) {
   h1 {line-height: 40px!important;}
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   h3 {
     font-size: 1.875rem;
@@ -2100,10 +2099,6 @@ h6 {
 
   .md\:h-\[700px\] {
     height: 700px;
-  }
-
-  .md\:h-screen {
-    height: 100vh;
   }
 
   .md\:min-h-\[470px\] {

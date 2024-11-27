@@ -92,7 +92,7 @@ const ExploreCities = () => {
                   height={309}
                   className='mx-auto'
                 />
-                <div className=' p-4 flex flex-col text-center mx-auto px-10'>
+                <div className=' p-2 flex flex-col text-center mx-auto md:px-10'>
                   <h3 className='text-3xl font-semibold my-3'>{card.title}</h3>
                   <p className='flex-grow text-base leading-6'>
                     {card.description}
