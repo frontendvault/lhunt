@@ -45,7 +45,7 @@ export default function HowItWorks () {
               >
                {item.number}
               </div>
-              <h3 className='text-lg font-semibold text-white mb-3'>
+              <h3 className='text-lg font-semibold text-white mb-2 md:mb-3'>
                 {item.heading}
               </h3>
               <p className='text-white'>{item.description}</p>
