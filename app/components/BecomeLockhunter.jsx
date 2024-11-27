@@ -28,7 +28,7 @@ const BecomeLockhunter = () => {
       <div className='container mx-auto px-4 py-8 '>
         <h2 className='text-center mb-8 text-white relative'>
           <span className='flex justify-center'> Become a </span>
-          <span className='text-[200px] text-yellow-custom -mt-8'>LuckHunter</span>
+          <span className='text-[200px] text-yellow-custom -mt-20 flex justify-center'>LuckHunter</span>
           <span className='flex justify-center lg:absolute w-full mt-[-130px]'>
             to Own a Casino
           </span>

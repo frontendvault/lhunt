@@ -68,7 +68,7 @@ h6 {
   @apply bg-cover;
 }
 .comparison-bg {
-  background: url(/images/comparison-bg.png) no-repeat 0 -100px;
+  background: url(/images/comparison-bg.png) no-repeat 0 0px;
   padding-bottom: 300px;
   @apply bg-cover;
 }
@@ -164,7 +164,7 @@ h6 {
 }
 .tokenomics-bg {
   background: url(/images/tokenomics-bg-full.png) no-repeat 0 -100px;
-  background-attachment: unset;
+ 
   @apply bg-cover;
 }
 
@@ -172,8 +172,10 @@ h6 {
   @apply border-dashed border-white border-b pb-3;
 }
 /* .luckhunter-comparison-bg, */
-.footer-bg {
-  background: url(/images/luckhunter-comparison-bg.png) no-repeat top center;
+.footer-bg{ background: url(/images/footer-main-bg.png) no-repeat left bottom;
+@apply bg-cover}
+.footer-bg-section {
+  background: url(/images/footer-bg-section.svg) no-repeat top center;
   @apply bg-cover;
 }
 .roadmap-col {

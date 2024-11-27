@@ -3,8 +3,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className=' text-white footer-bg'>
-      <div className='container mx-auto common-blue-bg py-10 px-[80px]'>
+    <footer className=' text-white footer-bg lg:py-10'>
+      <div className='container mx-auto footer-bg-section py-10 px-[80px]'>
         <div className='text-center mb-6'>
           <Image
             src='/images/footer-logo.svg'
@@ -23,40 +23,44 @@ const Footer = () => {
               eget dapibus metus blandit. Nunc eu leo lacinia.
             </p>
           </div>
-          <div>
+          <div className='md:px-10'>
             <h3 className='text-lg font-semibold mb-3'>Quick Links</h3>
-            <ul className='space-y-2'>
-              <li>
-                <a href='#' className='hover:text-gray-300'>
-                  Walllet
-                </a>
-              </li>
-              <li>
-                <a href='#' className='hover:text-gray-300'>
-                  How To Buy
-                </a>
-              </li>
-              <li>
-                <a href='#' className='hover:text-gray-300'>
-                  Visit
-                </a>
-              </li>
-              <li>
-                <a href='#' className='hover:text-gray-300'>
-                  Casino
-                </a>
-              </li>
-              <li>
-                <a href='#' className='hover:text-gray-300'>
-                  Audit
-                </a>
-              </li>
-              <li>
-                <a href='#' className='hover:text-gray-300'>
-                  Whitepaper
-                </a>
-              </li>
-            </ul>
+            <div className='flex justify-between'>
+              <ul className='space-y-2'>
+                <li>
+                  <a href='#' className='hover:text-gray-300'>
+                    Walllet
+                  </a>
+                </li>
+                <li>
+                  <a href='#' className='hover:text-gray-300'>
+                    How To Buy
+                  </a>
+                </li>
+                <li>
+                  <a href='#' className='hover:text-gray-300'>
+                    Visit
+                  </a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href='#' className='hover:text-gray-300'>
+                    Casino
+                  </a>
+                </li>
+                <li>
+                  <a href='#' className='hover:text-gray-300'>
+                    Audit
+                  </a>
+                </li>
+                <li>
+                  <a href='#' className='hover:text-gray-300'>
+                    Whitepaper
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div>
             <h3 className='text-lg font-semibold mb-3'>HELP</h3>

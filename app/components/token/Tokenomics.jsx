@@ -104,9 +104,9 @@ const Tokenomics = () => {
           </div>
         </div>
       </div>
-      <div>
-        <button className='bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700'>
-          Click Me
+      <div className="mt-20">
+        <button className=' text-white px-6 py-2  big-button h-[100px] w-[450px]'>
+        TOTAL SUPPLY : 8,066,087,838
         </button>
       </div>
     </div>

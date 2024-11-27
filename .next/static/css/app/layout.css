@@ -967,6 +967,9 @@ video {
 .-top-44 {
   top: -11rem;
 }
+.bottom-10 {
+  bottom: 2.5rem;
+}
 .left-0 {
   left: 0px;
 }
@@ -985,12 +988,6 @@ video {
 .top-3 {
   top: 0.75rem;
 }
-.bottom-5 {
-  bottom: 1.25rem;
-}
-.bottom-10 {
-  bottom: 2.5rem;
-}
 .m-0 {
   margin: 0px;
 }
@@ -1006,8 +1003,8 @@ video {
   margin-top: auto;
   margin-bottom: auto;
 }
-.-mt-0 {
-  margin-top: -0px;
+.-mt-20 {
+  margin-top: -5rem;
 }
 .-mt-24 {
   margin-top: -6rem;
@@ -1017,9 +1014,6 @@ video {
 }
 .-mt-6 {
   margin-top: -1.5rem;
-}
-.-mt-8 {
-  margin-top: -2rem;
 }
 .-mt-9 {
   margin-top: -2.25rem;
@@ -1081,18 +1075,6 @@ video {
 .mt-\[-130px\] {
   margin-top: -130px;
 }
-.-mt-60 {
-  margin-top: -15rem;
-}
-.-mt-5 {
-  margin-top: -1.25rem;
-}
-.-mt-10 {
-  margin-top: -2.5rem;
-}
-.-mt-20 {
-  margin-top: -5rem;
-}
 .block {
   display: block;
 }
@@ -1123,6 +1105,9 @@ video {
 .h-\[195px\] {
   height: 195px;
 }
+.h-\[325px\] {
+  height: 325px;
+}
 .h-\[356px\] {
   height: 356px;
 }
@@ -1140,12 +1125,6 @@ video {
 }
 .h-full {
   height: 100%;
-}
-.h-\[300px\] {
-  height: 300px;
-}
-.h-\[325px\] {
-  height: 325px;
 }
 .w-5 {
   width: 1.25rem;
@@ -1165,8 +1144,14 @@ video {
 .w-\[372px\] {
   width: 372px;
 }
+.w-\[400px\] {
+  width: 400px;
+}
 .w-\[425px\] {
   width: 425px;
+}
+.w-\[450px\] {
+  width: 450px;
 }
 .w-\[50\%\] {
   width: 50%;
@@ -1179,9 +1164,6 @@ video {
 }
 .w-screen {
   width: 100vw;
-}
-.w-\[400px\] {
-  width: 400px;
 }
 .min-w-full {
   min-width: 100%;
@@ -1457,6 +1439,10 @@ video {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1485,6 +1471,14 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1500,18 +1494,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 .pb-14 {
   padding-bottom: 3.5rem;
@@ -1740,7 +1722,7 @@ h6 {
   background-size: cover;
 }
 .comparison-bg {
-  background: url(/images/comparison-bg.png) no-repeat 0 -100px;
+  background: url(/images/comparison-bg.png) no-repeat 0 0px;
   padding-bottom: 300px;
   background-size: cover;
 }
@@ -1856,7 +1838,6 @@ h6 {
 }
 .tokenomics-bg {
   background: url(/images/tokenomics-bg-full.png) no-repeat 0 -100px;
-  background-attachment: unset;
   background-size: cover;
 }
 
@@ -1868,8 +1849,9 @@ h6 {
   padding-bottom: 0.75rem;
 }
 /* .luckhunter-comparison-bg, */
-.footer-bg {
-  background: url(/images/luckhunter-comparison-bg.png) no-repeat top center;
+.footer-bg{ background: url(/images/footer-main-bg.png) no-repeat left bottom; background-size: cover}
+.footer-bg-section {
+  background: url(/images/footer-bg-section.svg) no-repeat top center;
   background-size: cover;
 }
 .roadmap-col {
@@ -2076,6 +2058,11 @@ h6 {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .md\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -2181,10 +2168,6 @@ h6 {
     height: 920px;
   }
 
-  .lg\:h-screen {
-    height: 100vh;
-  }
-
   .lg\:w-\[1000px\] {
     width: 1000px;
   }
@@ -2253,6 +2236,11 @@ h6 {
   .lg\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .lg\:pl-10 {

@@ -26,8 +26,8 @@ const TokenDetails = () => {
               <p>ETH</p>
             </div>
           </div>
-          <div className='flex text-3xl lg:w-[80%]'>
-            <div className='p-5 border-r border-yellow-600 border-dashed'>
+          <div className='flex text-3xl lg:w-[80%] border-b border-yellow-600 border-dashed'>
+            <div className='p-5 border-r border-b border-yellow-600 border-dashed'>
               <h4 className='text-3xl mb-4'>Contact Token Address</h4>
               <p>e7d74fd9f22b499186aeac2efd686d27</p>
             </div>
