@@ -1059,9 +1059,6 @@ video {
 .ml-3 {
   margin-left: 0.75rem;
 }
-.ml-5 {
-  margin-left: 1.25rem;
-}
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -1119,9 +1116,6 @@ video {
 .h-\[325px\] {
   height: 325px;
 }
-.h-\[356px\] {
-  height: 356px;
-}
 .h-\[399px\] {
   height: 399px;
 }
@@ -1142,6 +1136,9 @@ video {
 }
 .h-full {
   height: 100%;
+}
+.h-screen {
+  height: 100vh;
 }
 .w-44 {
   width: 11rem;
@@ -1532,9 +1529,6 @@ video {
 .pb-3 {
   padding-bottom: 0.75rem;
 }
-.pr-24 {
-  padding-right: 6rem;
-}
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -1580,6 +1574,10 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .font-black {
   font-weight: 900;
@@ -1974,10 +1972,17 @@ h6 {
 }
 
 @media only screen and (max-width: 600px) {
-  h2 {font-size: 1.5rem}
+  h1 {line-height: 40px!important;}
+  h2 {
+    font-size: 1.5rem;
+  }
   h3 {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+  h6 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -2033,6 +2038,10 @@ h6 {
 
 @media (min-width: 768px) {
 
+  .md\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
   .md\:ml-7 {
     margin-left: 1.75rem;
   }
@@ -2061,10 +2070,6 @@ h6 {
     margin-top: 64px;
   }
 
-  .md\:ml-5 {
-    margin-left: 1.25rem;
-  }
-
   .md\:block {
     display: block;
   }
@@ -2085,6 +2090,10 @@ h6 {
     height: 170px;
   }
 
+  .md\:h-\[356px\] {
+    height: 356px;
+  }
+
   .md\:h-\[490px\] {
     height: 490px;
   }
@@ -2095,10 +2104,6 @@ h6 {
 
   .md\:h-screen {
     height: 100vh;
-  }
-
-  .md\:h-\[356px\] {
-    height: 356px;
   }
 
   .md\:min-h-\[470px\] {
@@ -2438,3 +2443,4 @@ h6 {
     background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
   }
 }
+

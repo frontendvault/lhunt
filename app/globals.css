@@ -186,7 +186,7 @@ h6 {
 }
 .explore-cities .slick-current {
   @apply opacity-100 
-  /* scale-125 md:h-[900px]; */
+  /* scale-125 md:h-[900px]; */;
 }
 
 .explore-iconic-cities-item {
@@ -244,7 +244,7 @@ h6 {
   background: url(/images/common-btn-md.svg) no-repeat center center;
 }
 .explore-cities .slick-slider {
-  @apply relative
+  @apply relative;
 }
 .explore-cities .slick-next,
 .explore-cities .slick-prev {
@@ -267,7 +267,14 @@ h6 {
 }
 
 @media only screen and (max-width: 600px) {
-  h2 {font-size: 1.5rem}
-  h3 { 
-    @apply text-3xl;}
+  h1 {line-height: 40px!important;}
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    @apply text-3xl;
+  }
+  h6 {
+    @apply text-xl;
+  }
 }
