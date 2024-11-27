@@ -16,10 +16,11 @@ ul {
 body {
   @apply bg-black;
 }
-h1 { line-height: 110px!important;}
+h1 {
+  line-height: 110px !important;
+}
 h1,
 h2 {
-
   @apply text-4xl lg:text-[80px]  font-bold uppercase leading-normal;
 }
 h3 {
@@ -49,9 +50,10 @@ h6 {
 .logo-bg {
   background: url(/images/logo-bg.svg) no-repeat top left;
 }
-.special-text-yellow {  color: transparent;
+.special-text-yellow {
+  color: transparent;
   -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: rgba(255, 175, 58, 1);;
+  -webkit-text-stroke-color: rgba(255, 175, 58, 1);
 }
 .special-text {
   color: transparent;
@@ -95,7 +97,6 @@ h6 {
 }
 .banner-bg {
   background: url(/images/banner-bg.svg) no-repeat left -180px;
-  
 
   @apply md:h-screen bg-cover;
 }
@@ -164,23 +165,37 @@ h6 {
 }
 .tokenomics-bg {
   background: url(/images/tokenomics-bg-full.png) no-repeat 0 -100px;
- 
+
   @apply bg-cover;
 }
-.howit-works-bg{background: url(/images/presale-bg.png) no-repeat bottom center;
-@apply bg-cover
+.howit-works-bg,
+.explore-cities {
+  background: url(/images/presale-bg.png) no-repeat bottom center;
+  @apply bg-cover;
 }
-.howit-work-diagram { background: url(/images/how-it-works-diagram.png) no-repeat 70px 300px }
+
+.howit-work-diagram {
+  background: url(/images/how-it-works-diagram.png) no-repeat 70px 300px;
+}
 .tokenomics-col {
   @apply border-dashed border-white border-b pb-3;
 }
 /* .explore-iconic-cities-bg {} */
+.explore-cities .slick-slide {
+  @apply opacity-40;
+}
+.explore-cities .slick-current {
+  @apply opacity-100;
+}
+
 .explore-iconic-cities-item {
- background: url(/images/explore-city-pg.png) no-repeat center center;
+  background: url(/images/explore-city-pg.svg) no-repeat top center;
 }
 /* .luckhunter-comparison-bg, */
-.footer-bg{ background: url(/images/footer-main-bg.png) no-repeat left bottom;
-@apply bg-cover}
+.footer-bg {
+  background: url(/images/footer-main-bg.png) no-repeat left bottom;
+  @apply bg-cover;
+}
 .footer-bg-section {
   background: url(/images/footer-bg-section.svg) no-repeat top center;
   @apply bg-cover;
@@ -206,6 +221,9 @@ h6 {
 .exclusive-events .slick-current {
   background: url(/images/carousel-item-bg.png) no-repeat -64px -62px;
   @apply lg:h-[412px] lg:w-[880px];
+}
+.exclusive-events .slick-current {
+  @apply flex;
 }
 .roadmap-bg {
   background: url(/images/road-map-bg.png) no-repeat center -200px;

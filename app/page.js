@@ -22,14 +22,14 @@ export default function Home() {
     <LuckhunterMetaverse/>
     <HowItWorks/>
     <ExploreCities/>
-    {/* <PersonalizeCasino/>
+    <PersonalizeCasino/>
     <BecomeLockhunter/>
     <ExclusiveEvents/>
     <Token/>
     <Roadmap/>
     <FeaturedIn/>
     <Comparison/>
-    <FAQ/> */}
+    <FAQ/>
     </>
   );
 }
