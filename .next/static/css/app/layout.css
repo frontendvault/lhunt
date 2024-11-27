@@ -999,21 +999,17 @@ video {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.my-40 {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
 }
 .-mt-20 {
   margin-top: -5rem;
@@ -1552,15 +1548,6 @@ video {
 .pt-8 {
   padding-top: 2rem;
 }
-.pl-5 {
-  padding-left: 1.25rem;
-}
-.pl-8 {
-  padding-left: 2rem;
-}
-.pl-10 {
-  padding-left: 2.5rem;
-}
 .text-left {
   text-align: left;
 }
@@ -1974,6 +1961,16 @@ h6 {
 .common-btn-md {
   background: url(/images/common-btn-md.svg) no-repeat center center;
 }
+.explore-cities .slick-slider {
+  position: relative;
+}
+.explore-cities .slick-next,
+.explore-cities .slick-prev {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
 .roadmap-item-bg {
   background: url(/images/roadmap-item-bg.svg) no-repeat top center;
 }
@@ -2051,22 +2048,6 @@ h6 {
     margin-top: 1.75rem;
   }
 
-  .md\:mt-\[140px\] {
-    margin-top: 140px;
-  }
-
-  .md\:mt-\[130px\] {
-    margin-top: 130px;
-  }
-
-  .md\:mt-\[100px\] {
-    margin-top: 100px;
-  }
-
-  .md\:mt-\[60px\] {
-    margin-top: 60px;
-  }
-
   .md\:mt-\[64px\] {
     margin-top: 64px;
   }
@@ -2089,6 +2070,10 @@ h6 {
 
   .md\:h-\[170px\] {
     height: 170px;
+  }
+
+  .md\:h-\[490px\] {
+    height: 490px;
   }
 
   .md\:h-\[700px\] {
@@ -2123,16 +2108,16 @@ h6 {
     width: 350px;
   }
 
+  .md\:w-\[400px\] {
+    width: 400px;
+  }
+
   .md\:w-\[420px\] {
     width: 420px;
   }
 
   .md\:w-\[430px\] {
     width: 430px;
-  }
-
-  .md\:w-\[475px\] {
-    width: 475px;
   }
 
   .md\:w-\[50\%\] {
@@ -2145,14 +2130,6 @@ h6 {
 
   .md\:w-\[86\%\] {
     width: 86%;
-  }
-
-  .md\:w-\[386px\] {
-    width: 386px;
-  }
-
-  .md\:w-\[400px\] {
-    width: 400px;
   }
 
   .md\:grid-cols-2 {
@@ -2200,14 +2177,6 @@ h6 {
 
   .md\:pb-\[300px\] {
     padding-bottom: 300px;
-  }
-
-  .md\:pr-3 {
-    padding-right: 0.75rem;
-  }
-
-  .md\:pr-1 {
-    padding-right: 0.25rem;
   }
 
   .md\:text-left {

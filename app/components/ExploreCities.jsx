@@ -79,13 +79,12 @@ const ExploreCities = () => {
       <div className=' lg:w-[1600px] mx-auto px-4 py-8'>
         <div className='absolute left-0 right-0 mb-20'>
           <Image src={"/images/iconic-cities.png"} width={1900} height={206}/>
-         
         </div>
 
-        <Slider {...settings} className='space-x-4 mt-20'>
+        <Slider {...settings} className='space-x-4 my-40'>
           {cards.map((card, index) => (
-            <div key={index} className='p-4 explore-iconic-cities-item  h-[900px]'>
-              <div className=' rounded-lg shadow-md overflow-hidden mt-2 flex-col mx-auto md:w-[400px] md:mt-[64px]'>
+            <div key={index} className='p-4 explore-iconic-cities-item '>
+              <div className=' rounded-lg shadow-md overflow-hidden mt-2 flex-col mx-auto md:w-[400px] md:h-[490px] md:mt-[64px]'>
                 <Image
                   src={card.image}
                   alt={card.title}

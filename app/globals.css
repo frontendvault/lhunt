@@ -185,7 +185,8 @@ h6 {
   @apply opacity-40;
 }
 .explore-cities .slick-current {
-  @apply opacity-100;
+  @apply opacity-100 
+  /* scale-125 md:h-[900px]; */
 }
 
 .explore-iconic-cities-item {
@@ -241,6 +242,13 @@ h6 {
 }
 .common-btn-md {
   background: url(/images/common-btn-md.svg) no-repeat center center;
+}
+.explore-cities .slick-slider {
+  @apply relative
+}
+.explore-cities .slick-next,
+.explore-cities .slick-prev {
+  @apply absolute bottom-0 right-0 left-0;
 }
 .roadmap-item-bg {
   background: url(/images/roadmap-item-bg.svg) no-repeat top center;
