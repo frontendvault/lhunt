@@ -51,12 +51,12 @@ const ExploreCities = () => {
 
   // Slick slider settings
   const settings = {
-    // centerMode:true,
+     centerMode:true,
     // centerPadding:"100px",
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
@@ -75,7 +75,7 @@ const ExploreCities = () => {
   }
 
   return (
-    <div className='bg-black text-white explore-cities py-20'>
+    <div className='bg-black text-white explore-cities py-10'>
       <div className=' lg:w-[1600px] mx-auto px-4 py-8'>
         <div className='absolute left-0 right-0 mb-20'>
           <Image src={"/images/iconic-cities.png"} width={1900} height={206}/>
@@ -85,16 +85,16 @@ const ExploreCities = () => {
         <Slider {...settings} className='space-x-4 mt-20'>
           {cards.map((card, index) => (
             <div key={index} className='p-4 explore-iconic-cities-item  h-[900px]'>
-              <div className=' rounded-lg shadow-md overflow-hidden mt-2 flex-col mx-auto md:w-[475px] md:mt-[140px]'>
+              <div className=' rounded-lg shadow-md overflow-hidden mt-2 flex-col mx-auto md:w-[400px] md:mt-[64px]'>
                 <Image
                   src={card.image}
                   alt={card.title}
-                  width={469}
+                  width={320}
                   height={309}
-                  className=''
+                  className='mx-auto'
                 />
-                <div className=' p-4 flex flex-col text-center'>
-                  <h3 className='text-3xl font-semibold my-6'>{card.title}</h3>
+                <div className=' p-4 flex flex-col text-center mx-auto px-10'>
+                  <h3 className='text-3xl font-semibold my-3'>{card.title}</h3>
                   <p className='flex-grow text-base leading-6'>
                     {card.description}
                   </p>

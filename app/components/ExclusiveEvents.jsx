@@ -70,7 +70,7 @@ const ExclusiveEvents = () => {
             </p>
           </div>
           <div>
-            <button className='px-6 py-2 text-white big-button md:h-[100px] md:w-[43    0px] '>
+            <button className='px-6 py-2 text-white big-button md:h-[100px] md:w-[430px] '>
               EXPLORE THE CITIES
             </button>
           </div>
