@@ -37,7 +37,7 @@ const Presale = () => {
               {boxes.map((box, index) => (
                 <div
                   key={index}
-                  className='shadow-md p-4 lg:py-4 presale-item-bg h-[195px] lg:w-[440px]'
+                  className='shadow-md p-4 lg:py-4 presale-item-bg h-[195px] lg:w-[440px] presale-col relative'
                 >
                   <div className='lg:w-[90%] mx-auto'>
                     <span className='text-2xl md:text-4xl font-black text-yellow-custom'>

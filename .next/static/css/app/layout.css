@@ -1826,6 +1826,35 @@ h6 {
   background-attachment: unset;
   background-size: cover;
 }
+.presale-col:before {
+  content: "";
+  left: -60px;
+  top: 45%;
+  position: absolute;
+  z-index: 10;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 9999px;
+  border-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(126 34 206 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1))}
+.presale-col:after {
+  content: "";
+  left: -61px;
+  top: 51%;
+  position: absolute;
+  z-index: 0;
+  margin-left: 0.5rem;
+  height: 100%;
+  border-left-width: 2px;
+  border-style: dashed;
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity, 1))}
+.presale-col:nth-child(3):after {
+  display: none;
+}
 .presale-form-bg {
   background: url(/images/presale-form-bg.png) no-repeat center center;
 }

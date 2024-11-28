@@ -112,6 +112,21 @@ h6 {
   background-attachment: unset;
   @apply bg-cover;
 }
+.presale-col:before {
+  content: "";
+  left: -60px;
+  top: 45%;
+  @apply absolute h-4 w-4 border-4  border-purple-700 bg-black rounded-full z-10 
+}
+.presale-col:after {
+  content: "";
+  left: -61px;
+  top: 51%;
+  @apply absolute h-full ml-2 z-0 border-l-2 border-dashed border-gray-700 
+}
+.presale-col:nth-child(3):after {
+  @apply hidden
+}
 .presale-form-bg {
   background: url(/images/presale-form-bg.png) no-repeat center center;
 }
