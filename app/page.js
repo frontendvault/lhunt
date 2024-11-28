@@ -21,7 +21,7 @@ export default function Home() {
     <Banner/>
     <Presale/>
     <LuckhunterMetaverse/>
-<HowItWorks/>   
+    <HowItWorks/>   
     <ExploreCities/>
     <PersonalizeCasino/>
     <BecomeLockhunter/>

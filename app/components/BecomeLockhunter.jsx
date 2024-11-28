@@ -33,12 +33,12 @@ const BecomeLockhunter = () => {
             to Own a Casino
           </span>
         </h2>
-        <div className='flex items-end h-[399px] lg:h-[1100px] justify-between'>
+        <div className='flex items-end h-[400px] md:h-[1100px] justify-between'>
          
           {columns.map((column, index) => (
             <div
               key={index}
-              className='text-left lg:w-[450px] lg:h-[360px] relative own-casino-itemn-bg p-[60px]'
+              className='text-left w-[100%] h-[300px] md:w-[450px] md:h-[360px] relative own-casino-itemn-bg p-[60px]'
             >
               <Image src={column.img} width={220} height={220} alt={column.heading} className='absolute right-5 -mt-24'/>
               <h4 className=' font-semibold uppercase border-gray-300 pb-3 mb-4 border-b text-white'>

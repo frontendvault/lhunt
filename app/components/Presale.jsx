@@ -52,9 +52,9 @@ const Presale = () => {
               ))}
             </div>
           </div>
-          <div className='flex-1 presale-form-bg w-full h-full lg:w-[700px] lg:h-[920px] flex items-center justify-center'>
-            <form className='p-10 lg:w-[90%]  mx-auto  shadow rounded space-y-6 border border-sky-500 text-white bg-gradient-to-r from-sky-400/20 to-sky-600/30 inner-shadow'>
-              <div>
+          <div className='flex-1 presale-form-bg w-[100%] py-20  lg:w-[700px] lg:h-[920px] flex items-center justify-center'>
+            <form className='px-8 md:p-10 w-[100%] lg:w-[90%]  mx-auto  shadow rounded space-y-6 md:border border-sky-500 text-white md:bg-gradient-to-r from-sky-400/20 to-sky-600/30 inner-shadow'>
+              <div className='pt-2 md:pt-0'>
                 <div className='flex justify-between text-yellow-custom mb-2'>
                   <span>Presale Stage 1</span>
                   <span>Raised :$40560.36</span>
@@ -69,27 +69,27 @@ const Presale = () => {
                   <span>Target : $252222</span>
                 </div>
               </div>
-              <h3 className='border-y text-2xl font-bold text-center text-white py-5 '>
+              <h3 className='border-y text-2xl font-bold text-center text-white py-2 md:py-5 '>
                 1 LHUNT = $0.001
               </h3>
               <div className='flex justify-between space-x-4 '>
                 <button
                   type='button'
-                  className='flex-grow py-2 text-white  py-3 px-2 border border-gray-400 bg-gray-800/[.5]'
+                  className='flex-grow text-white  text-[10px] md:text-base  py-1 md:py-3 px-1 md:px-2 border border-gray-400 bg-gray-800/[.5]'
                 >
                   Listing Price $0.001(+400%)
                 </button>
                 <button
                   type='button'
-                  className='flex-grow py-2  text-white  py-3 px-2 border border-gray-400 bg-gray-800/[.5]'
+                  className='flex-grow  text-white text-[10px] md:text-base  py-1 md:py-3 px-1 md:px-2 border border-gray-400 bg-gray-800/[.5]'
                 >
                   Next Price $0.001(+400%)
                 </button>
               </div>
-              <div className='grid grid-cols-5 gap-4'>
+              <div className='grid grid-cols-5 gap-2 md:gap-4'>
                 <button
                   type='button'
-                  className='py-2 border border-gray-400  text-white font-semibold h-[53px] hover:bg-gradient-to-r :hoverfrom-indigo-500 via-purple-500 to-purple-800'
+                  className='py-1 md:py-2 border border-gray-400  text-white font-semibold h-9 md:h-[53px] hover:bg-gradient-to-r :hoverfrom-indigo-500 via-purple-500 to-purple-800'
                 >
                   <Image
                     src={'/images/eth.svg'}
@@ -100,7 +100,7 @@ const Presale = () => {
                 </button>
                 <button
                   type='button'
-                  className='py-2 border border-gray-400  text-white font-semibold h-[53px] hover:bg-gradient-to-r :hoverfrom-indigo-500 via-purple-500 to-purple-800'
+                  className='py-1 md:py-2 border border-gray-400  text-white font-semibold h-9 md:h-[53px] hover:bg-gradient-to-r :hoverfrom-indigo-500 via-purple-500 to-purple-800'
                 >
                   <Image
                     src={'/images/usdt.svg'}
@@ -111,7 +111,7 @@ const Presale = () => {
                 </button>
                 <button
                   type='button'
-                  className='py-2 border border-gray-400 hover:bg-blue-500 text-white h-[53px] hover:bg-gradient-to-r :hoverfrom-indigo-500 via-purple-500 to-purple-800'
+                  className='py-1 md:py-2 border border-gray-400 hover:bg-blue-500 text-white h-9 md:h-[53px] hover:bg-gradient-to-r :hoverfrom-indigo-500 via-purple-500 to-purple-800'
                 >
                   <Image
                     src={'/images/bnb.svg'}
@@ -122,7 +122,7 @@ const Presale = () => {
                 </button>
                 <button
                   type='button'
-                  className='py-2 border border-gray-400 hover:bg-green-500 text-white h-[53px] hover:bg-gradient-to-r :hoverfrom-indigo-500 via-purple-500 to-purple-800'
+                  className='py-1 md:py-2 border border-gray-400 hover:bg-green-500 text-white h-9 md:h-[53px] hover:bg-gradient-to-r :hoverfrom-indigo-500 via-purple-500 to-purple-800'
                 >
                   <Image
                     src={'/images/matic.svg'}
@@ -133,7 +133,7 @@ const Presale = () => {
                 </button>
                 <button
                   type='button'
-                  className='py-2 border border-gray-400 hover:bg-purple-500 text-white h-[53px] hover:bg-gradient-to-r :hoverfrom-indigo-500 via-purple-500 to-purple-800'
+                  className='py-1 md:py-2 border border-gray-400 hover:bg-purple-500 text-white h-9 md:h-[53px] hover:bg-gradient-to-r :hoverfrom-indigo-500 via-purple-500 to-purple-800'
                 >
                   <Image
                     src={'/images/card.svg'}
@@ -164,7 +164,6 @@ const Presale = () => {
                       width={60}
                       className='mr-1'
                     />
-              
                   </div>
                 </div>
                 <label
@@ -196,7 +195,7 @@ const Presale = () => {
               <div className='text-center'>
                 <button
                   type='submit'
-                  className='py-2  text-white font-bold rounded shadow big-button h-[100px] w-[425px]'
+                  className='py-2  text-white font-bold rounded shadow big-button h-[100px]  w-[330px] md:w-[425px]'
                 >
                   CONNECT WALLET
                 </button>

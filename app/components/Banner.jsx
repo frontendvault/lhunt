@@ -19,11 +19,11 @@ const Banner = () => {
               Your casino in iconic cities, your rules. Become a LuckHunter!
             </p>
           </div>
-          <div className='flex flex-col md:flex-row md:justify-end space-y-4 md:space-y-0 md:space-x-0'>
-            <button className='px-6 py-3 bg-white font-normal  banner-btn-left md:h-[100px] md:w-[320px]'>
+          <div className='flex flex-row md:flex-row justify-end space-y-4 md:space-y-0 md:space-x-0'>
+            <button className='px-6 py-3 bg-white font-normal mt-0  banner-btn-left h-[80px] w-[200px] md:h-[100px] md:w-[320px]'>
               GET STARTED
             </button>
-            <button className='px-6 py-3 text-white font-normal banner-btn-right md:h-[100px] md:w-[320px]'>
+            <button className='px-6 py-3 text-white mt-0 font-normal banner-btn-right h-[80px] w-[200px] md:h-[100px] md:w-[320px]'>
               EXPLORE CITIES
             </button>
           </div>

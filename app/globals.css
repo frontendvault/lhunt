@@ -277,4 +277,22 @@ h6 {
   h6 {
     @apply text-xl;
   }
+
+
+  .banner-bg { background-position: left 0 ;}
+  .banner-btn-left {
+    background: url(/images/banner-btn-left-mobile.png) no-repeat center center;
+  }
+  .banner-btn-right {
+    background: url(/images/banner-btn-right-mobile.png) no-repeat center center;
+  }
+  .presale-form-bg {
+    background: url(/images/presale-form-bg-mobile.png) no-repeat top center;
+  }
+  .howit-work-diagram {
+    background: url(/images/how-it-works-diagram-mobile.png) no-repeat top center;
+  }
+  .big-button {
+    background: url(/images/btn-big-bg-mobile.svg) no-repeat center center;
+}
 }
