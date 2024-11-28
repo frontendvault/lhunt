@@ -991,6 +991,18 @@ video {
 .top-3 {
   top: 0.75rem;
 }
+.top-4 {
+  top: 1rem;
+}
+.top-5 {
+  top: 1.25rem;
+}
+.top-7 {
+  top: 1.75rem;
+}
+.top-8 {
+  top: 2rem;
+}
 .m-0 {
   margin: 0px;
 }
@@ -1091,6 +1103,15 @@ video {
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+.mt-\[70px\] {
+  margin-top: 70px;
+}
+.mt-\[80px\] {
+  margin-top: 80px;
 }
 .block {
   display: block;
@@ -1899,11 +1920,11 @@ h6 {
   content: '';
   background: url(/images/metaverse-item-hover.svg) no-repeat bottom center;
   position: absolute;
-  bottom: 0.75rem;
-  left: 0px;
+  bottom: 1.5rem;
+  left: 1rem;
   right: 0px;
   height: 72px;
-  width: 280px;
+  width: 300px;
 }
 
 .metaverse-item:hover:after {
@@ -2213,6 +2234,10 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
+  .md\:top-10 {
+    top: 2.5rem;
+  }
 
   .md\:mx-auto {
     margin-left: auto;

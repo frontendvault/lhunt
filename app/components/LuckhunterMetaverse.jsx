@@ -77,7 +77,7 @@ export default function LuckhunterMetaverse () {
                 activeTab === index ? ' ' : ''
               }`}
             >
-              <div>
+              <div className='absolute md:top-10 left-0 right-0'>
                 <Image
                   src={tab.imgSmall}
                   width={159}
@@ -87,7 +87,7 @@ export default function LuckhunterMetaverse () {
                   style={{ width: 'auto', width: 'auto' }}
                 />
               </div>
-              <p className='px-10 text-lg text-white -mt-50 absolute bottom-10'>{tab.title}</p>
+              <p className='px-10 text-lg text-white mt-[80px]'>{tab.title}</p>
             </div>
           ))}
         </div>

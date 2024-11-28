@@ -158,7 +158,7 @@ h6 {
 .metaverse-item:after {
   content: '';
   background: url(/images/metaverse-item-hover.svg) no-repeat bottom center;
-  @apply absolute bottom-3 left-0 right-0 w-[280px] h-[72px];
+  @apply absolute bottom-6 left-4 right-0 w-[300px] h-[72px] ;
 }
 
 .metaverse-item:hover:after {
