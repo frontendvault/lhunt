@@ -378,9 +378,12 @@ h6 {
     background: url(/images/token-detail-mobile.png) no-repeat top center;
   }
   .metaverse-holder {
-    background: url(/images/casino-metverse-holder-mobile.png) no-repeat left center;
+    background: url(/images/casino-metaverse-holder-mobile.png) no-repeat left center;
     background-attachment: unset;
-    @apply p-4 flex items-center justify-center;
+    @apply p-4 flex items-center justify-center w-full bg-cover;
+  }
+  .metaverse-holder  {
+    @apply w-[382px]
   }
   .become-lockhunter-bg {
     background: url(/images/lockhunter-bg.png) no-repeat 0 500px;

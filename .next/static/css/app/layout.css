@@ -2144,12 +2144,15 @@ h6 {
     background: url(/images/token-detail-mobile.png) no-repeat top center;
   }
   .metaverse-holder {
-    background: url(/images/casino-metverse-holder-mobile.png) no-repeat left center;
+    background: url(/images/casino-metaverse-holder-mobile.png) no-repeat left center;
     background-attachment: unset;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
+    background-size: cover;
     padding: 1rem;
+    width: 382px;
   }
   .become-lockhunter-bg {
     background: url(/images/lockhunter-bg.png) no-repeat 0 500px;
@@ -2278,6 +2281,14 @@ h6 {
 
   .md\:mt-\[64px\] {
     margin-top: 64px;
+  }
+
+  .md\:mb-\[220px\] {
+    margin-bottom: 220px;
+  }
+
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
   }
 
   .md\:block {
