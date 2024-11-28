@@ -162,7 +162,7 @@ h6 {
   @apply flex justify-center items-center;
 }
 .tokenomics-bg {
-  background: url(/images/tokenomics-bg-full.png) no-repeat 0 -100px;
+  background: url(/images/tokenomics-bg-full.png) no-repeat -222px -100px;
 
   @apply bg-cover;
 }
@@ -176,8 +176,39 @@ h6 {
   background: url(/images/how-it-works-diagram.png) no-repeat 70px 300px;
 }
 .tokenomics-col {
-  @apply border-dashed border-white border-b pb-3;
+  @apply  border-dashed border-white border-b-2 pb-3;
 }
+.tokenomics-col:after {
+  content: "";
+  @apply border-b-2 border-dashed w-32 h-1  absolute bg-transparent
+
+}
+.left-side-token .tokenomics-col:first-child:after {
+  content: "";
+  bottom: -46px;
+  right: -110px;
+  @apply rotate-45
+}
+.left-side-token .tokenomics-col:nth-child(3):after {
+  content: "";
+  bottom: 46px;
+  right: -110px;
+  @apply -rotate-45
+}
+.right-side-token .tokenomics-col:first-child:after, .right-side-token .tokenomics-col:nth-child(2):after {
+  content: "";
+  bottom: -46px;
+  left: -110px;
+  @apply -rotate-45
+}
+.tokenomics-col:nth-child(5):after {
+  content: "";
+  bottom: 46px;
+  left: -110px;
+  @apply rotate-45
+}
+.right-side-token {}
+
 /* .explore-iconic-cities-bg {} */
 .explore-cities .slick-slide {
   @apply opacity-40;
@@ -324,4 +355,13 @@ h6 {
   .own-casino-itemn-bg {
     background: url(/images/own-casino-item-bg-mobile.png) no-repeat top center;
   }
+  .tokenomics-bg {
+    background: url(/images/tokenomic-bg-full-mobile.png) no-repeat center center ;
+
+  }
+  .footer-bg-section {
+    background: url(/images/footer-bg-section.png) no-repeat top center;
+    @apply bg-cover;
+  }
+
 }

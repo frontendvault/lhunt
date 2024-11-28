@@ -1373,10 +1373,6 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(168 85 247 / var(--tw-border-opacity, 1));
 }
-.border-sky-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(14 165 233 / var(--tw-border-opacity, 1));
-}
 .border-yellow-600 {
   --tw-border-opacity: 1;
   border-color: rgb(202 138 4 / var(--tw-border-opacity, 1));
@@ -1427,11 +1423,6 @@ video {
   --tw-gradient-to: rgb(134 25 143 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
-.from-sky-400\/20 {
-  --tw-gradient-from: rgb(56 189 248 / 0.2) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(56 189 248 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
 .from-sky-500\/20 {
   --tw-gradient-from: rgb(14 165 233 / 0.2) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(14 165 233 / 0) var(--tw-gradient-to-position);
@@ -1447,9 +1438,6 @@ video {
 }
 .to-purple-800 {
   --tw-gradient-to: #6b21a8 var(--tw-gradient-to-position);
-}
-.to-sky-600\/30 {
-  --tw-gradient-to: rgb(2 132 199 / 0.3) var(--tw-gradient-to-position);
 }
 .to-sky-900\/20 {
   --tw-gradient-to: rgb(12 74 110 / 0.2) var(--tw-gradient-to-position);
@@ -1893,7 +1881,7 @@ h6 {
   justify-content: center;
 }
 .tokenomics-bg {
-  background: url(/images/tokenomics-bg-full.png) no-repeat 0 -100px;
+  background: url(/images/tokenomics-bg-full.png) no-repeat -222px -100px;
   background-size: cover;
 }
 .howit-works-bg,
@@ -1906,12 +1894,46 @@ h6 {
   background: url(/images/how-it-works-diagram.png) no-repeat 70px 300px;
 }
 .tokenomics-col {
-  border-bottom-width: 1px;
+  border-bottom-width: 2px;
   border-style: dashed;
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
   padding-bottom: 0.75rem;
 }
+.tokenomics-col:after {
+  content: "";
+  position: absolute;
+  height: 0.25rem;
+  width: 8rem;
+  border-bottom-width: 2px;
+  border-style: dashed;
+  background-color: transparent}
+.left-side-token .tokenomics-col:first-child:after {
+  content: "";
+  bottom: -46px;
+  right: -110px;
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
+.left-side-token .tokenomics-col:nth-child(3):after {
+  content: "";
+  bottom: 46px;
+  right: -110px;
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
+.right-side-token .tokenomics-col:first-child:after, .right-side-token .tokenomics-col:nth-child(2):after {
+  content: "";
+  bottom: -46px;
+  left: -110px;
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
+.tokenomics-col:nth-child(5):after {
+  content: "";
+  bottom: 46px;
+  left: -110px;
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
+.right-side-token {}
+
 /* .explore-iconic-cities-bg {} */
 .explore-cities .slick-slide {
   opacity: 0.4;
@@ -2071,6 +2093,15 @@ h6 {
   .own-casino-itemn-bg {
     background: url(/images/own-casino-item-bg-mobile.png) no-repeat top center;
   }
+  .tokenomics-bg {
+    background: url(/images/tokenomic-bg-full-mobile.png) no-repeat center center ;
+
+  }
+  .footer-bg-section {
+    background: url(/images/footer-bg-section.png) no-repeat top center;
+    background-size: cover;
+  }
+
 }
 
 .hover\:bg-blue-500:hover {
@@ -2168,6 +2199,22 @@ h6 {
 
   .md\:mt-\[64px\] {
     margin-top: 64px;
+  }
+
+  .md\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .md\:mt-\[150px\] {
+    margin-top: 150px;
+  }
+
+  .md\:mt-\[160px\] {
+    margin-top: 160px;
+  }
+
+  .md\:mt-\[180px\] {
+    margin-top: 180px;
   }
 
   .md\:block {
@@ -2308,14 +2355,6 @@ h6 {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .md\:border {
-    border-width: 1px;
-  }
-
-  .md\:bg-gradient-to-r {
-    background-image: linear-gradient(to right, var(--tw-gradient-stops));
   }
 
   .md\:p-10 {
