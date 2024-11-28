@@ -62,12 +62,13 @@ const ExploreCities = () => {
       {
         breakpoint: 1024, // Adjust for tablets
         settings: {
-          slidesToShow: 2
+          slidesToShow: 1
         }
       },
       {
         breakpoint: 640, // Adjust for mobile
         settings: {
+          centerMode:false,
           slidesToShow: 1
         }
       }
@@ -84,7 +85,7 @@ const ExploreCities = () => {
         <Slider {...settings} className='space-x-4 my-40'>
           {cards.map((card, index) => (
             <div key={index} className='p-4 explore-iconic-cities-item '>
-              <div className=' rounded-lg shadow-md overflow-hidden mt-2 flex-col mx-auto md:w-[400px] md:h-[490px] md:mt-[64px]'>
+              <div className=' rounded-lg shadow-md overflow-hidden flex-col mx-auto md:w-[400px] h-[580px] md:h-[490px] mt-[10px] md:mt-[64px]'>
                 <Image
                   src={card.image}
                   alt={card.title}

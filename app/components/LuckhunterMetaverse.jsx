@@ -55,12 +55,12 @@ export default function LuckhunterMetaverse () {
               alt=''
             />
           </div>
-          <div className='flex  text-left absolute px-20 py-10 items-end h-full md:mb-[220px]'>
-            <div className='flex justify-between'>
-              <h3 className=' font-bold mb-4 md:w-[50%] text-yellow-custom '>
+          <div className='flex  text-left absolute px-5 md:px-20 md:py-10 items-end h-full md:mb-[220px]'>
+            <div className='flex flex-col md:flex-row md:justify-between'>
+              <h3 className=' font-bold mb-1 md:mb-4 md:w-[50%] text-yellow-custom '>
                 {tabs[activeTab].title}
               </h3>
-              <p className='md:w-[30%] text-white'>
+              <p className='md:w-[30%] text-white text-xs md:text-base'>
                 {tabs[activeTab].description}{' '}
               </p>
             </div>
