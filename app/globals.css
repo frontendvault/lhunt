@@ -20,7 +20,7 @@ h1 {
   line-height: 110px !important;
 }
 .special-line-height {
-  line-height: 140px;
+  line-height: 220px;
 }
 h1,
 h2 {
@@ -304,6 +304,12 @@ h6 {
 .explore-cities .slick-prev {
   @apply absolute bottom-0 right-0 left-0;
 }
+
+.slick-slider .slick-next{
+  background: url(/images/carousel-caret-bg.png) no-repeat center center; width: 280px; height: 80px;
+  @apply bottom-0 absolute
+}
+
 .roadmap-item-bg {
   background: url(/images/roadmap-item-bg.svg) no-repeat top center;
 }

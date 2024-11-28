@@ -1029,6 +1029,9 @@ video {
 .-mt-\[150px\] {
   margin-top: -150px;
 }
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -1091,9 +1094,6 @@ video {
 }
 .mt-\[80px\] {
   margin-top: 80px;
-}
-.mb-1 {
-  margin-bottom: 0.25rem;
 }
 .block {
   display: block;
@@ -1710,7 +1710,7 @@ h1 {
   line-height: 110px !important;
 }
 .special-line-height {
-  line-height: 140px;
+  line-height: 220px;
 }
 h1,
 h2 {
@@ -2073,6 +2073,10 @@ h6 {
   right: 0px;
   left: 0px;
 }
+
+.slick-slider .slick-next{
+  background: url(/images/carousel-caret-bg.png) no-repeat center center; width: 280px; height: 80px; position: absolute; bottom: 0px}
+
 .roadmap-item-bg {
   background: url(/images/roadmap-item-bg.svg) no-repeat top center;
 }
@@ -2247,6 +2251,10 @@ h6 {
     margin-bottom: 0.75rem;
   }
 
+  .md\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .md\:mb-5 {
     margin-bottom: 1.25rem;
   }
@@ -2297,10 +2305,6 @@ h6 {
 
   .md\:mt-\[64px\] {
     margin-top: 64px;
-  }
-
-  .md\:mb-4 {
-    margin-bottom: 1rem;
   }
 
   .md\:block {
