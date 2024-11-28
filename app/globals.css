@@ -19,6 +19,7 @@ body {
 h1 {
   line-height: 110px !important;
 }
+.lin
 h1,
 h2 {
   @apply text-4xl lg:text-[80px]  font-bold uppercase leading-normal;
@@ -96,7 +97,7 @@ h6 {
   background-attachment: unset;
 }
 .banner-bg {
-  background: url(/images/banner-bg.svg) no-repeat left -180px;
+  background: url(/images/banner-bg.svg) no-repeat left -0px;
 
   @apply md:h-screen bg-cover;
 }
@@ -150,8 +151,14 @@ h6 {
 .metaverse-item {
   background: url(/images/metaverse-item-bg.png) no-repeat center center;
   background-attachment: unset;
-  @apply bg-cover;
+  @apply bg-cover relative;
 }
+.metaverse-item:after { 
+  
+ content: "";  background: url(/images/metaverse-item-hover.svg) no-repeat bottom center; 
+@apply absolute bottom-3 left-0 right-0 w-[280px] h-[72px]
+}
+
 .metaverse-item:hover:after {
   background: url(/images/metaverse-item-hover.png) no-repeat bottom center;
   background-attachment: unset;

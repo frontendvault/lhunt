@@ -69,15 +69,15 @@ const Roadmap = () => {
       <p className='text-center text-white py-10'>This is the offcial LUCKHUNTER Casino roadmap</p>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
           {columns.map((column, index) => (
-            <div key={index} className='roadmap-item-bg p-6 md:min-h-[470px]'>
-              <h3 className='text-2xl font-bold  mb-2 text-white text-center'>
+            <div key={index} className='roadmap-item-bg p-2 md:p-6 min-h-[480px]'>
+              <h3 className='text-2xl font-bold  mb-2 text-white text-center mt-4 md:mt-0'>
                 {column.heading}
               </h3>
 
               <p className='font-bold mb-4 text-2xl text-yellow-custom text-center mt-10'>
                 {column.subheading}
               </p>
-              <ul className='space-y-2'>
+              <ul className='space-y-2 ml-[80px] md:ml-2'>
                 {column.items.map((item, idx) => (
                   <li key={idx} className='flex items-center text-white pb-2'>
                     <Image

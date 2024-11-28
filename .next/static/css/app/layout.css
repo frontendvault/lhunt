@@ -1089,6 +1089,24 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
+.ml-5 {
+  margin-left: 1.25rem;
+}
+.ml-10 {
+  margin-left: 2.5rem;
+}
+.ml-12 {
+  margin-left: 3rem;
+}
+.ml-\[100px\] {
+  margin-left: 100px;
+}
+.ml-\[80px\] {
+  margin-left: 80px;
+}
+.mt-3 {
+  margin-top: 0.75rem;
+}
 .block {
   display: block;
 }
@@ -1151,6 +1169,12 @@ video {
 }
 .h-screen {
   height: 100vh;
+}
+.min-h-\[600px\] {
+  min-height: 600px;
+}
+.min-h-\[480px\] {
+  min-height: 480px;
 }
 .w-44 {
   width: 11rem;
@@ -1703,6 +1727,7 @@ body {
 h1 {
   line-height: 110px !important;
 }
+.lin
 h1,
 h2 {
   font-size: 2.25rem;
@@ -1713,7 +1738,8 @@ h2 {
 }
 @media (min-width: 1024px) {
 
-  h1,
+  .lin
+h1,
 h2 {
     font-size: 80px;
   }
@@ -1805,7 +1831,7 @@ h6 {
   background-attachment: unset;
 }
 .banner-bg {
-  background: url(/images/banner-bg.svg) no-repeat left -180px;
+  background: url(/images/banner-bg.svg) no-repeat left -0px;
   background-size: cover;
 }
 @media (min-width: 768px) {
@@ -1881,8 +1907,13 @@ h6 {
 .metaverse-item {
   background: url(/images/metaverse-item-bg.png) no-repeat center center;
   background-attachment: unset;
+  position: relative;
   background-size: cover;
 }
+.metaverse-item:after { 
+  
+ content: "";  background: url(/images/metaverse-item-hover.svg) no-repeat bottom center;  position: absolute;  bottom: 0.75rem;  left: 0px;  right: 0px;  height: 72px;  width: 280px}
+
 .metaverse-item:hover:after {
   background: url(/images/metaverse-item-hover.png) no-repeat bottom center;
   background-attachment: unset;
@@ -2234,6 +2265,22 @@ h6 {
     margin-top: 64px;
   }
 
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .md\:ml-1 {
+    margin-left: 0.25rem;
+  }
+
+  .md\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2280,6 +2327,10 @@ h6 {
 
   .md\:min-h-\[470px\] {
     min-height: 470px;
+  }
+
+  .md\:min-h-\[480px\] {
+    min-height: 480px;
   }
 
   .md\:w-\[1320px\] {
@@ -2376,6 +2427,10 @@ h6 {
 
   .md\:p-10 {
     padding: 2.5rem;
+  }
+
+  .md\:p-6 {
+    padding: 1.5rem;
   }
 
   .md\:px-0 {
