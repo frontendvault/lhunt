@@ -37,9 +37,9 @@ const   HowItWorks =() => {
     <div className=' md:py-[50px]  howit-works-bg'>
       <div className='container mx-auto howit-work-diagram lg:py-[100px]'>
           <h2 className=' text-white text-center mb-4 md:mb-5'>{data.heading}</h2>
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
+        <div className='flex flex-col md:flex-row '>
           {data.secondRow.map((item, index) => (
-            <div key={index} className='text-center space-y-4 w-44 mx-auto'>
+            <div key={index} className='text-center space-y-4 w-44 md:mx-auto howitworks-section1-mobile'>
               <div  
                 className={`w-[65px] h-[65px] mx-auto flex items-center justify-center rounded-full border-2  border-dashed border-purple-500  font-bold text-3xl text-white mb-6`}
               >
@@ -52,9 +52,9 @@ const   HowItWorks =() => {
             </div>
           ))}
         </div>
-        <div className='flex justify-evenly md:w-[86%] mx-auto mt-10 md:mt-20 '>
+        <div className='flex flex-col md:flex-row md:justify-evenly md:w-[86%] mx-auto mt-5 md:mt-20 howitworks-section1-mobile'>
           {data.thirdRow.map((item, index) => (
-            <div key={index} className='p-6 text-center md:w-[300px] mx-50 mt-20'>
+            <div key={index} className='p-6 text-center w-72 md:w-[300px] md:mx-50 mt-20'>
               <div
                 className={`w-[65px] h-[65px] mx-auto flex items-center justify-center rounded-full  border-2 border-dashed border-purple-500 font-bold text-3xl text-white mb-6`}
               >
@@ -67,6 +67,8 @@ const   HowItWorks =() => {
             </div>
           ))}
         </div>
+
+        
       </div>
     </div>
   )

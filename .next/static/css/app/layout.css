@@ -958,6 +958,9 @@ video {
 .visible {
   visibility: visible;
 }
+.static {
+  position: static;
+}
 .absolute {
   position: absolute;
 }
@@ -1077,6 +1080,9 @@ video {
 .mt-4 {
   margin-top: 1rem;
 }
+.mt-5 {
+  margin-top: 1.25rem;
+}
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -1122,9 +1128,6 @@ video {
 .h-\[325px\] {
   height: 325px;
 }
-.h-\[400px\] {
-  height: 400px;
-}
 .h-\[600px\] {
   height: 600px;
 }
@@ -1139,6 +1142,9 @@ video {
 }
 .h-\[900px\] {
   height: 900px;
+}
+.h-auto {
+  height: auto;
 }
 .h-full {
   height: 100%;
@@ -1155,6 +1161,9 @@ video {
 .w-6 {
   width: 1.5rem;
 }
+.w-72 {
+  width: 18rem;
+}
 .w-\[100\%\] {
   width: 100%;
 }
@@ -1166,6 +1175,9 @@ video {
 }
 .w-\[200px\] {
   width: 200px;
+}
+.w-\[330px\] {
+  width: 330px;
 }
 .w-\[372px\] {
   width: 372px;
@@ -1193,15 +1205,6 @@ video {
 }
 .w-screen {
   width: 100vw;
-}
-.w-\[300px\] {
-  width: 300px;
-}
-.w-\[320px\] {
-  width: 320px;
-}
-.w-\[330px\] {
-  width: 330px;
 }
 .min-w-full {
   min-width: 100%;
@@ -1260,9 +1263,6 @@ video {
 }
 .justify-between {
   justify-content: space-between;
-}
-.justify-evenly {
-  justify-content: space-evenly;
 }
 .gap-2 {
   gap: 0.5rem;
@@ -1592,6 +1592,10 @@ video {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
 .text-\[10px\] {
   font-size: 10px;
 }
@@ -1836,8 +1840,6 @@ h6 {
 }
 .presale-form-bg {
   background: url(/images/presale-form-bg.png) no-repeat center center;
-  background-attachment: unset;
-  background-size: cover;
 }
 .presale-item-bg {
   background: url(/images/presale-item-bg.svg) no-repeat left center;
@@ -2007,7 +2009,9 @@ h6 {
 }
 
 @media only screen and (max-width: 600px) {
-  h1 {line-height: 40px!important;}
+  h1 {
+    line-height: 40px !important;
+  }
   h2 {
     font-size: 1.75rem;
   }
@@ -2015,13 +2019,18 @@ h6 {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+  h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
   h6 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
-
-  .banner-bg { background-position: left 0 ;}
+  .banner-bg {
+    background-position: left 0;
+  }
   .banner-btn-left {
     background: url(/images/banner-btn-left-mobile.png) no-repeat center center;
   }
@@ -2032,11 +2041,36 @@ h6 {
     background: url(/images/presale-form-bg-mobile.png) no-repeat top center;
   }
   .howit-work-diagram {
-    background: url(/images/how-it-works-diagram-mobile.png) no-repeat top center;
+    background: url(/images/how-it-works-diagram-mobile.png) no-repeat center
+      center;
   }
   .big-button {
     background: url(/images/btn-big-bg-mobile.svg) no-repeat center center;
-}
+  }
+  .howitworks-section1-mobile:first-child {
+    margin-left: 240px;
+  }
+  .howitworks-section1-mobile:nth-child(1) {
+    margin-right: 240px;
+  }
+  .howitworks-section1-mobile:nth-child(2) {
+    margin-right: 240px;
+  }
+  .howitworks-section1-mobile:nth-child(4) {
+    margin-right: 240px;
+  }
+  .howitworks-section2-mobile:first-child {
+    margin-right: 240px;
+  }
+  .howitworks-section2-mobile:nth-child(1) {
+    margin-left: 240px;
+  }
+  .become-lockhunter-bg {
+    background: url(/images/lockhunter-bg.png) no-repeat 0 500px;
+  }
+  .own-casino-itemn-bg {
+    background: url(/images/own-casino-item-bg-mobile.png) no-repeat top center;
+  }
 }
 
 .hover\:bg-blue-500:hover {
@@ -2090,6 +2124,11 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .md\:mb-3 {
     margin-bottom: 0.75rem;
@@ -2207,6 +2246,10 @@ h6 {
     width: 420px;
   }
 
+  .md\:w-\[425px\] {
+    width: 425px;
+  }
+
   .md\:w-\[430px\] {
     width: 430px;
   }
@@ -2227,10 +2270,6 @@ h6 {
     width: 86%;
   }
 
-  .md\:w-\[425px\] {
-    width: 425px;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2243,8 +2282,16 @@ h6 {
     flex-direction: row;
   }
 
+  .md\:items-end {
+    align-items: flex-end;
+  }
+
   .md\:justify-end {
     justify-content: flex-end;
+  }
+
+  .md\:justify-evenly {
+    justify-content: space-evenly;
   }
 
   .md\:gap-4 {
@@ -2273,6 +2320,11 @@ h6 {
 
   .md\:p-10 {
     padding: 2.5rem;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:px-10 {
@@ -2318,11 +2370,6 @@ h6 {
   .md\:py-\[50px\] {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .md\:pb-\[300px\] {

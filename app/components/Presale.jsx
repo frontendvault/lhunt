@@ -53,7 +53,7 @@ const Presale = () => {
             </div>
           </div>
           <div className='flex-1 presale-form-bg w-[100%] py-20  lg:w-[700px] lg:h-[920px] flex items-center justify-center'>
-            <form className='px-8 md:p-10 w-[100%] lg:w-[90%]  mx-auto  shadow rounded space-y-6 md:border border-sky-500 text-white md:bg-gradient-to-r from-sky-400/20 to-sky-600/30 inner-shadow'>
+            <form className='px-8 md:p-10 w-[100%] lg:w-[90%]  mx-auto  shadow rounded space-y-6  text-white '>
               <div className='pt-2 md:pt-0'>
                 <div className='flex justify-between text-yellow-custom mb-2'>
                   <span>Presale Stage 1</span>

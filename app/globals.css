@@ -114,8 +114,6 @@ h6 {
 }
 .presale-form-bg {
   background: url(/images/presale-form-bg.png) no-repeat center center;
-  background-attachment: unset;
-  @apply bg-cover;
 }
 .presale-item-bg {
   background: url(/images/presale-item-bg.svg) no-repeat left center;
@@ -267,19 +265,25 @@ h6 {
 }
 
 @media only screen and (max-width: 600px) {
-  h1 {line-height: 40px!important;}
+  h1 {
+    line-height: 40px !important;
+  }
   h2 {
     font-size: 1.75rem;
   }
   h3 {
     @apply text-3xl;
   }
+  h4 {
+    @apply text-2xl
+  }
   h6 {
     @apply text-xl;
   }
 
-
-  .banner-bg { background-position: left 0 ;}
+  .banner-bg {
+    background-position: left 0;
+  }
   .banner-btn-left {
     background: url(/images/banner-btn-left-mobile.png) no-repeat center center;
   }
@@ -290,9 +294,34 @@ h6 {
     background: url(/images/presale-form-bg-mobile.png) no-repeat top center;
   }
   .howit-work-diagram {
-    background: url(/images/how-it-works-diagram-mobile.png) no-repeat top center;
+    background: url(/images/how-it-works-diagram-mobile.png) no-repeat center
+      center;
   }
   .big-button {
     background: url(/images/btn-big-bg-mobile.svg) no-repeat center center;
-}
+  }
+  .howitworks-section1-mobile:first-child {
+    @apply ml-[240px];
+  }
+  .howitworks-section1-mobile:nth-child(1) {
+    @apply mr-[240px];
+  }
+  .howitworks-section1-mobile:nth-child(2) {
+    @apply mr-[240px];
+  }
+  .howitworks-section1-mobile:nth-child(4) {
+    @apply mr-[240px];
+  }
+  .howitworks-section2-mobile:first-child {
+    @apply mr-[240px];
+  }
+  .howitworks-section2-mobile:nth-child(1) {
+    @apply ml-[240px];
+  }
+  .become-lockhunter-bg {
+    background: url(/images/lockhunter-bg.png) no-repeat 0 500px;
+  }
+  .own-casino-itemn-bg {
+    background: url(/images/own-casino-item-bg-mobile.png) no-repeat top center;
+  }
 }

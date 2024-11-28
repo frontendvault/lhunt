@@ -33,7 +33,7 @@ export default function LuckhunterMetaverse () {
       description:
         'Nullam semper tempus sapien placerat accumsan. Sed pretium ut arcu vel fringilla. Duis accumsan, augue eget elementum dictum, libero odio lacinia felis.'
     }
-  ]
+  ] 
 
   return (
     <div className='flex flex-col h-full space-y-6 casino-metaverse py-5 md:py-20'>

@@ -28,17 +28,17 @@ const BecomeLockhunter = () => {
       <div className='container mx-auto px-4 py-8 '>
         <h2 className='text-center mb-8 text-white relative'>
           <span className='flex justify-center'> Become a </span>
-          <span className='tex-2xl md:text-[200px] text-yellow-custom -mt-20 flex justify-center'>LuckHunter</span>
-          <span className='flex justify-center lg:absolute w-full md:mt-[-130px]'>
+          <span className='text-5xl md:text-[200px] text-yellow-custom -mt-20 flex justify-center'>LuckHunter</span>
+          <span className='flex justify-center static lg:absolute w-full mt-0 md:mt-[-130px]'>
             to Own a Casino
           </span>
         </h2>
-        <div className='flex items-end h-[400px] md:h-[1100px] justify-between'>
+        <div className='flex flex-col md:flex-row md:items-end h-auto md:h-[1100px] justify-between'>
          
           {columns.map((column, index) => (
             <div
               key={index}
-              className='text-left w-[100%] h-[300px] md:w-[450px] md:h-[360px] relative own-casino-itemn-bg p-[60px]'
+              className='text-left h-[300px] w-full md:w-[450px] md:h-[360px] relative own-casino-itemn-bg p-[60px]'
             >
               <Image src={column.img} width={220} height={220} alt={column.heading} className='absolute right-5 -mt-24'/>
               <h4 className=' font-semibold uppercase border-gray-300 pb-3 mb-4 border-b text-white'>
