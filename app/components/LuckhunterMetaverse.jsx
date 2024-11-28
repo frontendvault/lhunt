@@ -46,7 +46,7 @@ export default function LuckhunterMetaverse () {
             gaming assets using LHUNT tokens.
           </p>
         </div>
-        <div className='flex flex-grow  p-6 rounded-lg w-[1320px] h-[810px]  relative metaverse-holder lg:-mt-[100px] pt-10'>
+        <div className='flex flex-grow  p-6 rounded-lg w-full md:w-[1320px] md:h-[810px]  relative metaverse-holder lg:-mt-[100px] pt-10'>
           <div className=' flex justify-center mx-auto  '>
             <Image
               src={tabs[activeTab].imgBig}

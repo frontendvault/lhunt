@@ -3,8 +3,8 @@ import React from 'react'
 
 const TokenDetails = () => {
   return (
-    <div className='token-details  mx-auto flex night-sky-stars-bg md:mt-48 md:pb-[300px]'>
-      <div className=' lg:w-[1185px] lg:h-[638px] mx-auto flex  justify-between p-20 text-white relative'>
+    <div className='token-details  mx-auto hidden md:flex night-sky-stars-bg md:mt-48 md:pb-[300px]'>
+      <div className=' w-full lg:w-[1185px] lg:h-[638px] mx-auto flex  justify-between p-20 text-white relative'>
         <div className='flex flex-col'>
           <h2 className='uppercase'>Token Details</h2>
           <p className='w-[80%]'>
@@ -12,7 +12,7 @@ const TokenDetails = () => {
             quasi odio, maxime quibusdam est omnis magni dolores minus accusamus
             aliquam!
           </p>
-          <div className='grid grid-cols-3  text-3xl border-b border-yellow-600 border-dashed lg:w-[80%]'>
+          <div className='grid grid-cols-3  text-3xl border-b border-yellow-600 border-dashed w-full lg:w-[80%]'>
             <div className='p-5 border-r border-yellow-600 border-dashed'>
               <h4 className='text-3xl mb-4'>Token Name</h4>
               <p>LUCKYHUNTER</p>

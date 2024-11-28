@@ -158,7 +158,7 @@ h6 {
 .metaverse-item:after {
   content: '';
   background: url(/images/metaverse-item-hover.svg) no-repeat bottom center;
-  @apply absolute bottom-6 left-4 right-0 w-[300px] h-[72px] ;
+  @apply absolute bottom-5 left-4 right-0 w-[300px] h-[72px] ;
 }
 
 .metaverse-item:hover:after {
@@ -373,6 +373,14 @@ h6 {
   }
   .howitworks-section2-mobile:nth-child(1) {
     @apply ml-[240px];
+  }
+  .token-details {
+    background: url(/images/token-detail-mobile.png) no-repeat top center;
+  }
+  .metaverse-holder {
+    background: url(/images/casino-metverse-holder-mobile.png) no-repeat left center;
+    background-attachment: unset;
+    @apply p-4 flex items-center justify-center;
   }
   .become-lockhunter-bg {
     background: url(/images/lockhunter-bg.png) no-repeat 0 500px;

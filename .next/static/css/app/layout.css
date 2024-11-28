@@ -970,9 +970,6 @@ video {
 .-top-44 {
   top: -11rem;
 }
-.bottom-10 {
-  bottom: 2.5rem;
-}
 .left-0 {
   left: 0px;
 }
@@ -990,18 +987,6 @@ video {
 }
 .top-3 {
   top: 0.75rem;
-}
-.top-4 {
-  top: 1rem;
-}
-.top-5 {
-  top: 1.25rem;
-}
-.top-7 {
-  top: 1.75rem;
-}
-.top-8 {
-  top: 2rem;
 }
 .m-0 {
   margin: 0px;
@@ -1104,12 +1089,6 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
-.mt-\[50px\] {
-  margin-top: 50px;
-}
-.mt-\[70px\] {
-  margin-top: 70px;
-}
 .mt-\[80px\] {
   margin-top: 80px;
 }
@@ -1161,9 +1140,6 @@ video {
 .h-\[80px\] {
   height: 80px;
 }
-.h-\[810px\] {
-  height: 810px;
-}
 .h-\[900px\] {
   height: 900px;
 }
@@ -1193,9 +1169,6 @@ video {
 }
 .w-\[100\%\] {
   width: 100%;
-}
-.w-\[1320px\] {
-  width: 1320px;
 }
 .w-\[165px\] {
   width: 165px;
@@ -1920,7 +1893,7 @@ h6 {
   content: '';
   background: url(/images/metaverse-item-hover.svg) no-repeat bottom center;
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 1.25rem;
   left: 1rem;
   right: 0px;
   height: 72px;
@@ -2167,6 +2140,17 @@ h6 {
   .howitworks-section2-mobile:nth-child(1) {
     margin-left: 240px;
   }
+  .token-details {
+    background: url(/images/token-detail-mobile.png) no-repeat top center;
+  }
+  .metaverse-holder {
+    background: url(/images/casino-metverse-holder-mobile.png) no-repeat left center;
+    background-attachment: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
   .become-lockhunter-bg {
     background: url(/images/lockhunter-bg.png) no-repeat 0 500px;
   }
@@ -2338,6 +2322,10 @@ h6 {
 
   .md\:h-\[700px\] {
     height: 700px;
+  }
+
+  .md\:h-\[810px\] {
+    height: 810px;
   }
 
   .md\:w-\[1320px\] {
