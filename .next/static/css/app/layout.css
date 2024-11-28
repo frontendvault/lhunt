@@ -1881,7 +1881,7 @@ h6 {
   justify-content: center;
 }
 .tokenomics-bg {
-  background: url(/images/tokenomics-bg-full.png) no-repeat -222px -100px;
+  background: url(/images/tokenomics-bg-full.png) no-repeat center -100px;
   background-size: cover;
 }
 .howit-works-bg,
@@ -2197,24 +2197,12 @@ h6 {
     margin-top: -130px;
   }
 
-  .md\:mt-\[64px\] {
-    margin-top: 64px;
-  }
-
-  .md\:mt-40 {
-    margin-top: 10rem;
-  }
-
-  .md\:mt-\[150px\] {
-    margin-top: 150px;
-  }
-
-  .md\:mt-\[160px\] {
-    margin-top: 160px;
-  }
-
   .md\:mt-\[180px\] {
     margin-top: 180px;
+  }
+
+  .md\:mt-\[64px\] {
+    margin-top: 64px;
   }
 
   .md\:block {

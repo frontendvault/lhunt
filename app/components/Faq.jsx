@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState } from "react";
 
 const FAQ = () => {
@@ -40,7 +41,7 @@ const FAQ = () => {
               className="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-2xl  "
             >
               <span>{faq.question}</span>
-              <svg
+              {/* <svg
                 className={`w-5 h-5 transform transition-transform ${
                   openIndex === index ? "rotate-180" : ""
                 }`}
@@ -55,7 +56,11 @@ const FAQ = () => {
                   strokeWidth={2}
                   d="M19 9l-7 7-7-7"
                 />
-              </svg>
+              </svg> */}
+
+              <Image src={"/images/accordion-caret.svg"} height={54} width={54}  className={`w-5 h-5 transform transition-transform ${
+                  openIndex === index ? "rotate-180" : ""
+                }`}/>
             </button>
             {openIndex === index && (
               <div className="px-4 py-3 text-lg text-left ">

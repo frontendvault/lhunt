@@ -162,7 +162,7 @@ h6 {
   @apply flex justify-center items-center;
 }
 .tokenomics-bg {
-  background: url(/images/tokenomics-bg-full.png) no-repeat -222px -100px;
+  background: url(/images/tokenomics-bg-full.png) no-repeat center -100px;
 
   @apply bg-cover;
 }
