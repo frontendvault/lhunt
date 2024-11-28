@@ -403,7 +403,6 @@ h6 {
   }
   .footer-bg-section {
     background: url(/images/footer-bg-section.png) no-repeat top center;
-    @apply bg-cover;
   }
   .metaverse-holder h3 { font-size: 18px;
   @apply ml-2

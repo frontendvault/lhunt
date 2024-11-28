@@ -1101,6 +1101,9 @@ video {
 .mt-\[80px\] {
   margin-top: 80px;
 }
+.mt-7 {
+  margin-top: 1.75rem;
+}
 .block {
   display: block;
 }
@@ -1548,6 +1551,10 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .pb-14 {
   padding-bottom: 3.5rem;
@@ -2182,7 +2189,6 @@ h6 {
   }
   .footer-bg-section {
     background: url(/images/footer-bg-section.png) no-repeat top center;
-    background-size: cover;
   }
   .metaverse-holder h3 { font-size: 18px; margin-left: 0.5rem}
   .metaverse-holder p { font-size: 12px; margin-bottom: 2rem; margin-left: 0.5rem}
@@ -2465,6 +2471,14 @@ h6 {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .md\:border-r {
+    border-right-width: 1px;
+  }
+
+  .md\:border-t {
+    border-top-width: 1px;
+  }
+
   .md\:p-10 {
     padding: 2.5rem;
   }
@@ -2528,6 +2542,11 @@ h6 {
     padding-bottom: 50px;
   }
 
+  .md\:px-\[80px\] {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
   .md\:pb-\[300px\] {
     padding-bottom: 300px;
   }
@@ -2542,6 +2561,10 @@ h6 {
 
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 
   .md\:text-3xl {

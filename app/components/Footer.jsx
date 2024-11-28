@@ -4,8 +4,8 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer className=' text-white footer-bg lg:py-10'>
-      <div className='container mx-auto footer-bg-section py-10 px-[80px] md:h-[700px]'>
-        <div className='text-center mb-6 md:mt-7'>
+      <div className='container mx-auto footer-bg-section py-10 px-10 md:px-[80px] md:h-[700px]'>
+        <div className='text-left md:text-center mb-6 mt-7 md:mt-7'>
           <Image
             src='/images/footer-logo.svg'
             width={499}
@@ -14,8 +14,8 @@ const Footer = () => {
           />
         </div>
 
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left border-t border-b border-gray-600'>
-          <div className='border-r border-gray-600 py-20'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-6 text-left md:border-t border-b border-gray-600'>
+          <div className='md:border-r border-gray-600 py-3 md:py-20'>
             <h3 className='text-lg font-semibold lg:text-3xl mb-8'>Our Story</h3>
             <p className='text-gray-400'>
               Integer sagittis magna sapien, ac congue ex faucibus vitae. Duis
@@ -23,9 +23,9 @@ const Footer = () => {
               eget dapibus metus blandit. Nunc eu leo lacinia.
             </p>
           </div>
-          <div className='md:px-10 border-r border-gray-600 py-20'>
+          <div className='md:px-10 md:border-r border-gray-600 py-3 md:py-20'>
             <h3 className='text-xl lg:text-3xl font-semibold mb-8'>Quick Links</h3>
-            <div className='flex justify-between'>
+            <div className='flex flex-col md:flex-row justify-between text-left'>
               <ul className='space-y-2'>
                 <li>
                   <a href='#' className='hover:text-gray-300'>
@@ -62,7 +62,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className='py-20'>
+          <div className='py-3 md:py-20'>
             <h3 className='text-lg font-semibold lg:text-3xl mb-8'>HELP</h3>
             <p className='text-gray-400'>
               If you have any issues contact us at{' '}
