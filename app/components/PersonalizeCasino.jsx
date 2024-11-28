@@ -109,7 +109,7 @@ export default function PersonalizeCasino () {
        
       <div className='container mx-auto'>
       
-        <div className='flex justify-center space-x-2'>
+        <div className='flex flex-col md:flex-row md:justify-center space-x-2'>
           {mainTabs.map((tab, index) => (
             <button
               key={index}
@@ -117,7 +117,7 @@ export default function PersonalizeCasino () {
                 setMainTab(index)
                 setNestedTab(0) // Reset nested tab on main tab switch
               }}
-              className={` px-5 py-4 outline-0 rounded-lg md:text-[40px] uppercase font-bold md:w-[420px] text-left tabbed-main-bg md:h-[170px] text-white flex justify-between items-center ${
+              className={` px-5 py-4 mb-3 md:mb-0 outline-0 rounded-lg md:text-[40px] uppercase font-bold md:w-[420px] text-left tabbed-main-bg md:h-[170px] text-white flex justify-between items-center ${
                 mainTab === index
                   ? 'bg-blue-500 text-white'
                   : 'bg-gray-200 text-gray-800'

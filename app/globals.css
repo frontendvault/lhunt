@@ -314,13 +314,12 @@ h6 {
   background: url(/images/roadmap-item-bg.svg) no-repeat top center;
 }
 .faq-bg {
-  background: url(/images/tokenomics-bg.png) no-repeat top center;
+  background: url(/images/luckhunter-comparison-bg.png) no-repeat top center;
   @apply bg-cover;
 }
 .faq-accordion-bg {
   background: url(/images/faq-bg.png) no-repeat top left;
 }
-/* .faq-bg {box-shadow: 25px 25px 164px 0px #00AAFF4D%20inset;backdrop-filter:%20blur(64px)box-shadow:%200px%204px%2024px%200px%20#00000073;} */
 .common-blue-bg {
   box-shadow: 25px 25px 164px 0px rgba(0, 170, 255, 0.3) inset;
   backdrop-filter: blur(64px);

@@ -1092,6 +1092,9 @@ video {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.mt-7 {
+  margin-top: 1.75rem;
+}
 .mt-8 {
   margin-top: 2rem;
 }
@@ -1100,9 +1103,6 @@ video {
 }
 .mt-\[80px\] {
   margin-top: 80px;
-}
-.mt-7 {
-  margin-top: 1.75rem;
 }
 .block {
   display: block;
@@ -1512,10 +1512,6 @@ video {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.px-\[80px\] {
-  padding-left: 80px;
-  padding-right: 80px;
-}
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1551,10 +1547,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 .pb-14 {
   padding-bottom: 3.5rem;
@@ -2094,13 +2086,12 @@ h6 {
   background: url(/images/roadmap-item-bg.svg) no-repeat top center;
 }
 .faq-bg {
-  background: url(/images/tokenomics-bg.png) no-repeat top center;
+  background: url(/images/luckhunter-comparison-bg.png) no-repeat top center;
   background-size: cover;
 }
 .faq-accordion-bg {
   background: url(/images/faq-bg.png) no-repeat top left;
 }
-/* .faq-bg {box-shadow: 25px 25px 164px 0px #00AAFF4D%20inset;backdrop-filter:%20blur(64px)box-shadow:%200px%204px%2024px%200px%20#00000073;} */
 .common-blue-bg {
   box-shadow: 25px 25px 164px 0px rgba(0, 170, 255, 0.3) inset;
   backdrop-filter: blur(64px);
@@ -2323,6 +2314,10 @@ h6 {
     margin-top: 64px;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2447,6 +2442,10 @@ h6 {
     justify-content: flex-end;
   }
 
+  .md\:justify-center {
+    justify-content: center;
+  }
+
   .md\:justify-between {
     justify-content: space-between;
   }
@@ -2507,6 +2506,11 @@ h6 {
     padding-right: 5rem;
   }
 
+  .md\:px-\[80px\] {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
   .md\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -2542,11 +2546,6 @@ h6 {
     padding-bottom: 50px;
   }
 
-  .md\:px-\[80px\] {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-
   .md\:pb-\[300px\] {
     padding-bottom: 300px;
   }
@@ -2557,10 +2556,6 @@ h6 {
 
   .md\:pt-0 {
     padding-top: 0px;
-  }
-
-  .md\:text-left {
-    text-align: left;
   }
 
   .md\:text-center {
