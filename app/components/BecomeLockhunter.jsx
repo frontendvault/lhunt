@@ -26,7 +26,7 @@ const BecomeLockhunter = () => {
   return (
     <div className='become-lockhunter-bg '>
       <div className='container mx-auto px-4 py-8 '>
-        <h2 className='text-center mb-8 text-white relative'>
+        <h2 className='text-center mb-8 text-white relative special-line-height'>
           <span className='flex justify-center'> Become a </span>
           <span className='text-5xl md:text-[200px] text-yellow-custom -mt-20 flex justify-center'>LuckHunter</span>
           <span className='flex justify-center static lg:absolute w-full mt-0 md:mt-[-130px]'>

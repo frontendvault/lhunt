@@ -19,7 +19,9 @@ body {
 h1 {
   line-height: 110px !important;
 }
-.lin
+.special-line-height {
+  line-height: 140px;
+}
 h1,
 h2 {
   @apply text-4xl lg:text-[80px]  font-bold uppercase leading-normal;
@@ -114,19 +116,19 @@ h6 {
   @apply bg-cover;
 }
 .presale-col:before {
-  content: "";
+  content: '';
   left: -60px;
   top: 45%;
-  @apply absolute h-4 w-4 border-4  border-purple-700 bg-black rounded-full z-10 
+  @apply absolute h-4 w-4 border-4  border-purple-700 bg-black rounded-full z-10;
 }
 .presale-col:after {
-  content: "";
+  content: '';
   left: -61px;
   top: 51%;
-  @apply absolute h-full ml-2 z-0 border-l-2 border-dashed border-gray-700 
+  @apply absolute h-full ml-2 z-0 border-l-2 border-dashed border-gray-700;
 }
 .presale-col:nth-child(3):after {
-  @apply hidden
+  @apply hidden;
 }
 .presale-form-bg {
   background: url(/images/presale-form-bg.png) no-repeat center center;
@@ -153,10 +155,10 @@ h6 {
   background-attachment: unset;
   @apply bg-cover relative;
 }
-.metaverse-item:after { 
-  
- content: "";  background: url(/images/metaverse-item-hover.svg) no-repeat bottom center; 
-@apply absolute bottom-3 left-0 right-0 w-[280px] h-[72px]
+.metaverse-item:after {
+  content: '';
+  background: url(/images/metaverse-item-hover.svg) no-repeat bottom center;
+  @apply absolute bottom-3 left-0 right-0 w-[280px] h-[72px];
 }
 
 .metaverse-item:hover:after {
@@ -198,38 +200,39 @@ h6 {
   background: url(/images/how-it-works-diagram.png) no-repeat 70px 300px;
 }
 .tokenomics-col {
-  @apply  border-dashed border-white border-b-2 pb-3;
+  @apply border-dashed border-white border-b-2 pb-3;
 }
 .tokenomics-col:after {
-  content: "";
-  @apply border-b-2 border-dashed w-32 h-1  absolute bg-transparent
-
+  content: '';
+  @apply border-b-2 border-dashed w-32 h-1  absolute bg-transparent;
 }
 .left-side-token .tokenomics-col:first-child:after {
-  content: "";
+  content: '';
   bottom: -46px;
   right: -110px;
-  @apply rotate-45
+  @apply rotate-45;
 }
 .left-side-token .tokenomics-col:nth-child(3):after {
-  content: "";
+  content: '';
   bottom: 46px;
   right: -110px;
-  @apply -rotate-45
+  @apply -rotate-45;
 }
-.right-side-token .tokenomics-col:first-child:after, .right-side-token .tokenomics-col:nth-child(2):after {
-  content: "";
+.right-side-token .tokenomics-col:first-child:after,
+.right-side-token .tokenomics-col:nth-child(2):after {
+  content: '';
   bottom: -46px;
   left: -110px;
-  @apply -rotate-45
+  @apply -rotate-45;
 }
 .tokenomics-col:nth-child(5):after {
-  content: "";
+  content: '';
   bottom: 46px;
   left: -110px;
-  @apply rotate-45
+  @apply rotate-45;
 }
-.right-side-token {}
+.right-side-token {
+}
 
 /* .explore-iconic-cities-bg {} */
 .explore-cities .slick-slide {
@@ -328,7 +331,7 @@ h6 {
     @apply text-3xl;
   }
   h4 {
-    @apply text-2xl
+    @apply text-2xl;
   }
   h6 {
     @apply text-xl;
@@ -378,12 +381,11 @@ h6 {
     background: url(/images/own-casino-item-bg-mobile.png) no-repeat top center;
   }
   .tokenomics-bg {
-    background: url(/images/tokenomic-bg-full-mobile.png) no-repeat center center ;
-
+    background: url(/images/tokenomic-bg-full-mobile.png) no-repeat center
+      center;
   }
   .footer-bg-section {
     background: url(/images/footer-bg-section.png) no-repeat top center;
     @apply bg-cover;
   }
-
 }

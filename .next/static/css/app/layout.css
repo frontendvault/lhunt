@@ -1059,6 +1059,9 @@ video {
 .ml-3 {
   margin-left: 0.75rem;
 }
+.ml-\[80px\] {
+  margin-left: 80px;
+}
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -1088,24 +1091,6 @@ video {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.ml-5 {
-  margin-left: 1.25rem;
-}
-.ml-10 {
-  margin-left: 2.5rem;
-}
-.ml-12 {
-  margin-left: 3rem;
-}
-.ml-\[100px\] {
-  margin-left: 100px;
-}
-.ml-\[80px\] {
-  margin-left: 80px;
-}
-.mt-3 {
-  margin-top: 0.75rem;
 }
 .block {
   display: block;
@@ -1169,9 +1154,6 @@ video {
 }
 .h-screen {
   height: 100vh;
-}
-.min-h-\[600px\] {
-  min-height: 600px;
 }
 .min-h-\[480px\] {
   min-height: 480px;
@@ -1727,7 +1709,9 @@ body {
 h1 {
   line-height: 110px !important;
 }
-.lin
+.special-line-height {
+  line-height: 140px;
+}
 h1,
 h2 {
   font-size: 2.25rem;
@@ -1738,8 +1722,7 @@ h2 {
 }
 @media (min-width: 1024px) {
 
-  .lin
-h1,
+  h1,
 h2 {
     font-size: 80px;
   }
@@ -1853,7 +1836,7 @@ h6 {
   background-size: cover;
 }
 .presale-col:before {
-  content: "";
+  content: '';
   left: -60px;
   top: 45%;
   position: absolute;
@@ -1865,9 +1848,10 @@ h6 {
   --tw-border-opacity: 1;
   border-color: rgb(126 34 206 / var(--tw-border-opacity, 1));
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1))}
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
 .presale-col:after {
-  content: "";
+  content: '';
   left: -61px;
   top: 51%;
   position: absolute;
@@ -1877,7 +1861,8 @@ h6 {
   border-left-width: 2px;
   border-style: dashed;
   --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity, 1))}
+  border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
+}
 .presale-col:nth-child(3):after {
   display: none;
 }
@@ -1910,9 +1895,16 @@ h6 {
   position: relative;
   background-size: cover;
 }
-.metaverse-item:after { 
-  
- content: "";  background: url(/images/metaverse-item-hover.svg) no-repeat bottom center;  position: absolute;  bottom: 0.75rem;  left: 0px;  right: 0px;  height: 72px;  width: 280px}
+.metaverse-item:after {
+  content: '';
+  background: url(/images/metaverse-item-hover.svg) no-repeat bottom center;
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0px;
+  right: 0px;
+  height: 72px;
+  width: 280px;
+}
 
 .metaverse-item:hover:after {
   background: url(/images/metaverse-item-hover.png) no-repeat bottom center;
@@ -1961,38 +1953,45 @@ h6 {
   padding-bottom: 0.75rem;
 }
 .tokenomics-col:after {
-  content: "";
+  content: '';
   position: absolute;
   height: 0.25rem;
   width: 8rem;
   border-bottom-width: 2px;
   border-style: dashed;
-  background-color: transparent}
+  background-color: transparent;
+}
 .left-side-token .tokenomics-col:first-child:after {
-  content: "";
+  content: '';
   bottom: -46px;
   right: -110px;
   --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .left-side-token .tokenomics-col:nth-child(3):after {
-  content: "";
+  content: '';
   bottom: 46px;
   right: -110px;
   --tw-rotate: -45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
-.right-side-token .tokenomics-col:first-child:after, .right-side-token .tokenomics-col:nth-child(2):after {
-  content: "";
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.right-side-token .tokenomics-col:first-child:after,
+.right-side-token .tokenomics-col:nth-child(2):after {
+  content: '';
   bottom: -46px;
   left: -110px;
   --tw-rotate: -45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .tokenomics-col:nth-child(5):after {
-  content: "";
+  content: '';
   bottom: 46px;
   left: -110px;
   --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
-.right-side-token {}
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.right-side-token {
+}
 
 /* .explore-iconic-cities-bg {} */
 .explore-cities .slick-slide {
@@ -2154,14 +2153,13 @@ h6 {
     background: url(/images/own-casino-item-bg-mobile.png) no-repeat top center;
   }
   .tokenomics-bg {
-    background: url(/images/tokenomic-bg-full-mobile.png) no-repeat center center ;
-
+    background: url(/images/tokenomic-bg-full-mobile.png) no-repeat center
+      center;
   }
   .footer-bg-section {
     background: url(/images/footer-bg-section.png) no-repeat top center;
     background-size: cover;
   }
-
 }
 
 .hover\:bg-blue-500:hover {
@@ -2229,12 +2227,20 @@ h6 {
     margin-bottom: 1.25rem;
   }
 
+  .md\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
   .md\:ml-5 {
     margin-left: 1.25rem;
   }
 
   .md\:ml-7 {
     margin-left: 1.75rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
   }
 
   .md\:mt-10 {
@@ -2263,22 +2269,6 @@ h6 {
 
   .md\:mt-\[64px\] {
     margin-top: 64px;
-  }
-
-  .md\:ml-0 {
-    margin-left: 0px;
-  }
-
-  .md\:ml-1 {
-    margin-left: 0.25rem;
-  }
-
-  .md\:ml-2 {
-    margin-left: 0.5rem;
-  }
-
-  .md\:mt-0 {
-    margin-top: 0px;
   }
 
   .md\:block {
@@ -2323,14 +2313,6 @@ h6 {
 
   .md\:h-\[700px\] {
     height: 700px;
-  }
-
-  .md\:min-h-\[470px\] {
-    min-height: 470px;
-  }
-
-  .md\:min-h-\[480px\] {
-    min-height: 480px;
   }
 
   .md\:w-\[1320px\] {
