@@ -2089,7 +2089,21 @@ h6 {
 .slick-slider .slick-next {
   top: 110%;
   left: 77%;
+  position: relative}
+.slick-slider .slick-prev:before,
+.slick-slider .slick-next:before {
+  height: 2rem;
+  width: 4rem;
 }
+
+.slick-slider .slick-next:before {
+ background: url(/images/carousel-arrow.png) no-repeat center center;
+}
+.slick-slider .slick-before:before {
+  background: url(/images/carousel-arrow.png) no-repeat center center;
+ }
+
+.slick-slider .slick-prev:before,
 .slick-slider .slick-prev {
   margin-left: 100px;
 }
