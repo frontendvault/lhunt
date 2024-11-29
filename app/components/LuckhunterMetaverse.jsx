@@ -67,13 +67,13 @@ export default function LuckhunterMetaverse () {
           </div>
         </div>
 
-        <div className='flex justify-center space-x-4 flex-col md:flex-row'>
+        <div className='flex justify-center space-x-4 flex-row flex-wrap md:flex-nowrap'>
           {tabs.map((tab, index) => (
             <div
               key={index}
               onClick={() => setActiveTab(index)}
               // css only: bg-gradient-to-b from-fuchsia-800/50 via-fuchsia-900/20
-              className={`metaverse-item cursor-pointer flex-col flex justify-center rounded-lg text-center text-sm font-medium  h-[325px] w-[400px] relative ${
+              className={`metaverse-item cursor-pointer flex-col flex justify-center rounded-lg text-center text-sm font-medium h-[250px] md:h-[325px] w-[400px] relative ${
                 activeTab === index ? ' ' : ''
               }`}
             >
@@ -87,7 +87,7 @@ export default function LuckhunterMetaverse () {
                   style={{ width: 'auto', width: 'auto' }}
                 />
               </div>
-              <p className='px-10 text-lg text-white mt-[80px]'>{tab.title}</p>
+              <p className='px-4 md:px-10 text-lg text-white mt-[80px]'>{tab.title}</p>
             </div>
           ))}
         </div>

@@ -967,8 +967,8 @@ video {
 .relative {
   position: relative;
 }
-.-bottom-\[450px\] {
-  bottom: -450px;
+.-bottom-\[180px\] {
+  bottom: -180px;
 }
 .-left-20 {
   left: -5rem;
@@ -990,12 +990,6 @@ video {
 }
 .top-3 {
   top: 0.75rem;
-}
-.-bottom-\[350px\] {
-  bottom: -350px;
-}
-.-bottom-\[180px\] {
-  bottom: -180px;
 }
 .\!m-0 {
   margin: 0px !important;
@@ -1065,8 +1059,8 @@ video {
 .mb-8 {
   margin-bottom: 2rem;
 }
-.mb-\[400px\] {
-  margin-bottom: 400px;
+.mb-\[200px\] {
+  margin-bottom: 200px;
 }
 .ml-3 {
   margin-left: 0.75rem;
@@ -1116,9 +1110,6 @@ video {
 .mt-\[80px\] {
   margin-top: 80px;
 }
-.mb-\[200px\] {
-  margin-bottom: 200px;
-}
 .block {
   display: block;
 }
@@ -1152,17 +1143,17 @@ video {
 .h-\[195px\] {
   height: 195px;
 }
+.h-\[250px\] {
+  height: 250px;
+}
+.h-\[270px\] {
+  height: 270px;
+}
 .h-\[300px\] {
   height: 300px;
 }
-.h-\[325px\] {
-  height: 325px;
-}
 .h-\[330px\] {
   height: 330px;
-}
-.h-\[450px\] {
-  height: 450px;
 }
 .h-\[580px\] {
   height: 580px;
@@ -1184,9 +1175,6 @@ video {
 }
 .h-screen {
   height: 100vh;
-}
-.h-\[270px\] {
-  height: 270px;
 }
 .min-h-\[480px\] {
   min-height: 480px;
@@ -1212,11 +1200,11 @@ video {
 .w-\[200px\] {
   width: 200px;
 }
+.w-\[280px\] {
+  width: 280px;
+}
 .w-\[330px\] {
   width: 330px;
-}
-.w-\[347px\] {
-  width: 347px;
 }
 .w-\[372px\] {
   width: 372px;
@@ -1247,9 +1235,6 @@ video {
 }
 .w-screen {
   width: 100vw;
-}
-.w-\[280px\] {
-  width: 280px;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -1287,6 +1272,9 @@ video {
 }
 .flex-col {
   flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
 }
 .items-start {
   align-items: flex-start;
@@ -2260,6 +2248,11 @@ h6 {
     background: url(/images/tokenomic-bg-full-mobile.png) no-repeat center
       center;
   }
+  .metaverse-item {
+    background: url(/images/metaverse-item-mobile.png) no-repeat center center;
+    width: 45%}
+
+
   .comparison-chart-bg {
     background: url(/images/comparison-chart-bg-mobile.png) no-repeat top center;
   }
@@ -2411,12 +2404,12 @@ h6 {
     margin-top: 5rem;
   }
 
-  .md\:mt-3 {
-    margin-top: 0.75rem;
-  }
-
   .md\:mt-48 {
     margin-top: 12rem;
+  }
+
+  .md\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .md\:mt-6 {
@@ -2437,10 +2430,6 @@ h6 {
 
   .md\:mt-\[64px\] {
     margin-top: 64px;
-  }
-
-  .md\:mt-5 {
-    margin-top: 1.25rem;
   }
 
   .md\:block {
@@ -2465,6 +2454,10 @@ h6 {
 
   .md\:h-\[170px\] {
     height: 170px;
+  }
+
+  .md\:h-\[325px\] {
+    height: 325px;
   }
 
   .md\:h-\[356px\] {
@@ -2573,6 +2566,10 @@ h6 {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
   .md\:items-end {

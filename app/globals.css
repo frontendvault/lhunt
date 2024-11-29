@@ -431,6 +431,12 @@ h6 {
     background: url(/images/tokenomic-bg-full-mobile.png) no-repeat center
       center;
   }
+  .metaverse-item {
+    background: url(/images/metaverse-item-mobile.png) no-repeat center center;
+    @apply w-[45%]
+  }
+
+
   .comparison-chart-bg {
     background: url(/images/comparison-chart-bg-mobile.png) no-repeat top center;
   }
