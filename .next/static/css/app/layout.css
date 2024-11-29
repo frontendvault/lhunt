@@ -2068,7 +2068,7 @@ h6 {
 .common-btn-md {
   background: url(/images/common-btn-md.svg) no-repeat center center;
 }
-.explore-cities .slick-slider {
+.slick-slider {
   position: relative;
 }
 .explore-cities .slick-next,
@@ -2078,10 +2078,24 @@ h6 {
   right: 0px;
   left: 0px;
 }
-
-.slick-slider .slick-next{
-  background: url(/images/carousel-caret-bg.png) no-repeat center center; width: 280px; height: 80px; position: absolute; bottom: 0px}
-
+.slick-slider .slick-next {
+  background: url(/images/carousel-caret-bg.png) no-repeat center center;
+  width: 280px;
+  height: 80px;
+  position: absolute;
+  bottom: 0px !important;
+}
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+  top: 110%;
+  left: 77%;
+}
+.slick-slider .slick-prev {
+  margin-left: 100px;
+}
+.slick-slider .slick-next:before {
+  margin-left: 100px;
+}
 .roadmap-item-bg {
   background: url(/images/roadmap-item-bg.svg) no-repeat top center;
 }
@@ -2158,7 +2172,8 @@ h6 {
     background: url(/images/token-detail-mobile.png) no-repeat top center;
   }
   .metaverse-holder {
-    background: url(/images/casino-metaverse-holder-mobile.png) no-repeat left center;
+    background: url(/images/casino-metaverse-holder-mobile.png) no-repeat left
+      center;
     background-attachment: unset;
     display: flex;
     width: 100%;
@@ -2181,8 +2196,15 @@ h6 {
   .footer-bg-section {
     background: url(/images/footer-bg-section.png) no-repeat top center;
   }
-  .metaverse-holder h3 { font-size: 18px; margin-left: 0.5rem}
-  .metaverse-holder p { font-size: 12px; margin-bottom: 2rem; margin-left: 0.5rem}
+  .metaverse-holder h3 {
+    font-size: 18px;
+    margin-left: 0.5rem;
+  }
+  .metaverse-holder p {
+    font-size: 12px;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+  }
 }
 
 .hover\:bg-blue-500:hover {
@@ -2244,6 +2266,10 @@ h6 {
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .md\:mb-10 {
@@ -2312,10 +2338,6 @@ h6 {
 
   .md\:mt-\[64px\] {
     margin-top: 64px;
-  }
-
-  .md\:mb-0 {
-    margin-bottom: 0px;
   }
 
   .md\:block {
