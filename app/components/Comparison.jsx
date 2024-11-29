@@ -29,12 +29,11 @@ const Comparison = () => {
   return (
     <div className='comparison-bg'>
       <div className='lg:w-[1360px] mx-auto px-4 py-8'>
-        {/* Comparison Table */}
         <h2 className='text-yellow-custom md:w-[70%] mb-8 '>
           WHAT Sets Luckhunter apart form others
         </h2>
-        <div className='overflow-x-auto bg-sky-500/[.4] comparison-chart-bg h-[900px] lg:p-12'>
-          <table className='min-w-full table-auto mt-20'>
+        <div className='overflow-x-auto bg-sky-500/[.4] comparison-chart-bg h-[600px] md:h-[900px]  p-6 lg:p-12'>
+          <table className='px-20 md:px-0 md:min-w-full table-auto mt-20'>
             <thead>
               <tr className=''>
                 <th className='px-6 py-3 text-left text-sm font-medium text-gray-600'>

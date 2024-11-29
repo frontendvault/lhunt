@@ -56,7 +56,7 @@ const Roadmap = () => {
 
   return (
     <div className='roadmap-bg py-10'>
-      <h2 className='-mt-[150px]'>
+      <h2 className='md:-mt-[150px]'>
         <Image
           src={'/images/roadmap-heading.svg'}
           height={100}

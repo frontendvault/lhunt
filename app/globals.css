@@ -308,29 +308,31 @@ h6 {
   background: url(/images/carousel-caret-bg.png) no-repeat center center;
   width: 280px;
   height: 80px;
-  @apply !bottom-0 absolute;
+  @apply !bottom-0 absolute z-50;
 }
-.slick-slider .slick-prev,
-.slick-slider .slick-next {
+.slick-slider .slick-prev {
   top: 110%;
   left: 77%;
-  @apply relative
+
+}
+.slick-slider .slick-next {
+  top: 110%;
+  left: 85%;
 }
 .slick-slider .slick-prev:before,
 .slick-slider .slick-next:before {
-@apply h-8 w-16
+  @apply h-8 w-16 z-50;
 }
 
 .slick-slider .slick-next:before {
- background: url(/images/carousel-arrow.png) no-repeat center center;
+  background: url(/images/carousel-arrow.png) no-repeat center center;
 }
 .slick-slider .slick-before:before {
   background: url(/images/carousel-arrow.png) no-repeat center center;
- }
+}
 
-.slick-slider .slick-prev:before,
-.slick-slider .slick-prev {
-  margin-left: 100px;
+.slick-slider .slick-prev:before{
+  margin-left: 224px!important;
 }
 .slick-slider .slick-next:before {
   margin-left: 100px;
@@ -405,13 +407,16 @@ h6 {
     @apply ml-[240px];
   }
   .token-details {
-    background: url(/images/token-detail-mobile.png) no-repeat top center;
+    background: url(/images/token-detail-bg-mobile.png) no-repeat top center;
   }
   .metaverse-holder {
     background: url(/images/casino-metaverse-holder-mobile.png) no-repeat left
       center;
     background-attachment: unset;
     @apply p-4 flex items-center justify-center w-full bg-cover;
+  }
+  .token-details-right {
+    background: url(/images/token-detail-right-mobile.png) no-repeat top center;
   }
   .metaverse-holder {
     @apply w-[382px];
@@ -426,6 +431,9 @@ h6 {
     background: url(/images/tokenomic-bg-full-mobile.png) no-repeat center
       center;
   }
+  .comparison-chart-bg {
+    background: url(/images/comparison-chart-bg-mobile.png) no-repeat top center;
+  }
   .footer-bg-section {
     background: url(/images/footer-bg-section.png) no-repeat top center;
   }
@@ -436,5 +444,8 @@ h6 {
   .metaverse-holder p {
     font-size: 12px;
     @apply mb-8 ml-2;
+  }
+  .truncate-on-mobile {
+    @apply truncate
   }
 }

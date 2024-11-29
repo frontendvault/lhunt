@@ -967,8 +967,11 @@ video {
 .relative {
   position: relative;
 }
-.-top-44 {
-  top: -11rem;
+.-bottom-\[450px\] {
+  bottom: -450px;
+}
+.-left-20 {
+  left: -5rem;
 }
 .left-0 {
   left: 0px;
@@ -987,6 +990,12 @@ video {
 }
 .top-3 {
   top: 0.75rem;
+}
+.-bottom-\[350px\] {
+  bottom: -350px;
+}
+.-bottom-\[180px\] {
+  bottom: -180px;
 }
 .\!m-0 {
   margin: 0px !important;
@@ -1029,8 +1038,8 @@ video {
 .-mt-9 {
   margin-top: -2.25rem;
 }
-.-mt-\[150px\] {
-  margin-top: -150px;
+.mb-0 {
+  margin-bottom: 0px;
 }
 .mb-1 {
   margin-bottom: 0.25rem;
@@ -1055,6 +1064,9 @@ video {
 }
 .mb-8 {
   margin-bottom: 2rem;
+}
+.mb-\[400px\] {
+  margin-bottom: 400px;
 }
 .ml-3 {
   margin-left: 0.75rem;
@@ -1104,6 +1116,9 @@ video {
 .mt-\[80px\] {
   margin-top: 80px;
 }
+.mb-\[200px\] {
+  margin-bottom: 200px;
+}
 .block {
   display: block;
 }
@@ -1143,6 +1158,12 @@ video {
 .h-\[325px\] {
   height: 325px;
 }
+.h-\[330px\] {
+  height: 330px;
+}
+.h-\[450px\] {
+  height: 450px;
+}
 .h-\[580px\] {
   height: 580px;
 }
@@ -1155,9 +1176,6 @@ video {
 .h-\[80px\] {
   height: 80px;
 }
-.h-\[900px\] {
-  height: 900px;
-}
 .h-auto {
   height: auto;
 }
@@ -1166,6 +1184,9 @@ video {
 }
 .h-screen {
   height: 100vh;
+}
+.h-\[270px\] {
+  height: 270px;
 }
 .min-h-\[480px\] {
   min-height: 480px;
@@ -1194,6 +1215,9 @@ video {
 .w-\[330px\] {
   width: 330px;
 }
+.w-\[347px\] {
+  width: 347px;
+}
 .w-\[372px\] {
   width: 372px;
 }
@@ -1215,14 +1239,17 @@ video {
 .w-\[80\%\] {
   width: 80%;
 }
+.w-\[95\%\] {
+  width: 95%;
+}
 .w-full {
   width: 100%;
 }
 .w-screen {
   width: 100vw;
 }
-.min-w-full {
-  min-width: 100%;
+.w-\[280px\] {
+  width: 280px;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -1466,17 +1493,17 @@ video {
 .p-0 {
   padding: 0px;
 }
+.p-1 {
+  padding: 0.25rem;
+}
 .p-2 {
   padding: 0.5rem;
 }
-.p-20 {
-  padding: 5rem;
+.p-3 {
+  padding: 0.75rem;
 }
 .p-4 {
   padding: 1rem;
-}
-.p-5 {
-  padding: 1.25rem;
 }
 .p-6 {
   padding: 1.5rem;
@@ -1495,6 +1522,10 @@ video {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -1593,6 +1624,18 @@ video {
 }
 .text-\[10px\] {
   font-size: 10px;
+}
+.text-\[12px\] {
+  font-size: 12px;
+}
+.text-\[13px\] {
+  font-size: 13px;
+}
+.text-\[14px\] {
+  font-size: 14px;
+}
+.text-\[20px\] {
+  font-size: 20px;
 }
 .text-\[40px\] {
   font-size: 40px;
@@ -2084,28 +2127,33 @@ h6 {
   height: 80px;
   position: absolute;
   bottom: 0px !important;
+  z-index: 50;
 }
-.slick-slider .slick-prev,
-.slick-slider .slick-next {
+.slick-slider .slick-prev {
   top: 110%;
   left: 77%;
-  position: relative}
+
+}
+.slick-slider .slick-next {
+  top: 110%;
+  left: 85%;
+}
 .slick-slider .slick-prev:before,
 .slick-slider .slick-next:before {
+  z-index: 50;
   height: 2rem;
   width: 4rem;
 }
 
 .slick-slider .slick-next:before {
- background: url(/images/carousel-arrow.png) no-repeat center center;
+  background: url(/images/carousel-arrow.png) no-repeat center center;
 }
 .slick-slider .slick-before:before {
   background: url(/images/carousel-arrow.png) no-repeat center center;
- }
+}
 
-.slick-slider .slick-prev:before,
-.slick-slider .slick-prev {
-  margin-left: 100px;
+.slick-slider .slick-prev:before{
+  margin-left: 224px!important;
 }
 .slick-slider .slick-next:before {
   margin-left: 100px;
@@ -2183,7 +2231,7 @@ h6 {
     margin-left: 240px;
   }
   .token-details {
-    background: url(/images/token-detail-mobile.png) no-repeat top center;
+    background: url(/images/token-detail-bg-mobile.png) no-repeat top center;
   }
   .metaverse-holder {
     background: url(/images/casino-metaverse-holder-mobile.png) no-repeat left
@@ -2195,6 +2243,11 @@ h6 {
     justify-content: center;
     background-size: cover;
     padding: 1rem;
+  }
+  .token-details-right {
+    background: url(/images/token-detail-right-mobile.png) no-repeat top center;
+  }
+  .metaverse-holder {
     width: 382px;
   }
   .become-lockhunter-bg {
@@ -2207,6 +2260,9 @@ h6 {
     background: url(/images/tokenomic-bg-full-mobile.png) no-repeat center
       center;
   }
+  .comparison-chart-bg {
+    background: url(/images/comparison-chart-bg-mobile.png) no-repeat top center;
+  }
   .footer-bg-section {
     background: url(/images/footer-bg-section.png) no-repeat top center;
   }
@@ -2218,6 +2274,11 @@ h6 {
     font-size: 12px;
     margin-bottom: 2rem;
     margin-left: 0.5rem;
+  }
+  .truncate-on-mobile {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
 
@@ -2273,6 +2334,18 @@ h6 {
 
 @media (min-width: 768px) {
 
+  .md\:-top-44 {
+    top: -11rem;
+  }
+
+  .md\:bottom-auto {
+    bottom: auto;
+  }
+
+  .md\:left-0 {
+    left: 0px;
+  }
+
   .md\:top-10 {
     top: 2.5rem;
   }
@@ -2280,6 +2353,10 @@ h6 {
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .md\:-mt-\[150px\] {
+    margin-top: -150px;
   }
 
   .md\:mb-0 {
@@ -2334,8 +2411,16 @@ h6 {
     margin-top: 5rem;
   }
 
+  .md\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .md\:mt-48 {
     margin-top: 12rem;
+  }
+
+  .md\:mt-6 {
+    margin-top: 1.5rem;
   }
 
   .md\:mt-7 {
@@ -2352,6 +2437,10 @@ h6 {
 
   .md\:mt-\[64px\] {
     margin-top: 64px;
+  }
+
+  .md\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .md\:block {
@@ -2402,6 +2491,10 @@ h6 {
     height: 810px;
   }
 
+  .md\:h-\[900px\] {
+    height: 900px;
+  }
+
   .md\:w-\[1320px\] {
     width: 1320px;
   }
@@ -2450,12 +2543,24 @@ h6 {
     width: 70%;
   }
 
+  .md\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .md\:w-\[86\%\] {
     width: 86%;
   }
 
+  .md\:w-auto {
+    width: auto;
+  }
+
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:min-w-full {
+    min-width: 100%;
   }
 
   .md\:grid-cols-2 {
@@ -2516,6 +2621,14 @@ h6 {
 
   .md\:p-10 {
     padding: 2.5rem;
+  }
+
+  .md\:p-20 {
+    padding: 5rem;
+  }
+
+  .md\:p-5 {
+    padding: 1.25rem;
   }
 
   .md\:p-6 {
@@ -2608,6 +2721,11 @@ h6 {
     line-height: 2.5rem;
   }
 
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .md\:text-\[200px\] {
     font-size: 200px;
   }
@@ -2635,6 +2753,11 @@ h6 {
 
   .md\:text-lg {
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
