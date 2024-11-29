@@ -967,11 +967,14 @@ video {
 .relative {
   position: relative;
 }
-.-bottom-\[180px\] {
-  bottom: -180px;
+.-bottom-\[150px\] {
+  bottom: -150px;
 }
-.-left-20 {
-  left: -5rem;
+.-left-\[150px\] {
+  left: -150px;
+}
+.-top-2 {
+  top: -0.5rem;
 }
 .left-0 {
   left: 0px;
@@ -1082,6 +1085,9 @@ video {
 }
 .mt-10 {
   margin-top: 2.5rem;
+}
+.mt-14 {
+  margin-top: 3.5rem;
 }
 .mt-2 {
   margin-top: 0.5rem;
@@ -1214,6 +1220,9 @@ video {
 }
 .w-\[425px\] {
   width: 425px;
+}
+.w-\[430px\] {
+  width: 430px;
 }
 .w-\[450px\] {
   width: 450px;
@@ -2200,6 +2209,16 @@ h6 {
   .big-button {
     background: url(/images/btn-big-bg-mobile.svg) no-repeat center center;
   }
+  .exclusive-events .slick-current {
+    background: url(/images/carousel-item-bg.png) no-repeat left top;
+  }
+  @media (min-width: 1024px) {
+
+    .exclusive-events .slick-current {
+      height: 412px;
+      width: 100%;
+    }
+  }
   .howitworks-section1-mobile:first-child {
     margin-left: 240px;
   }
@@ -2258,7 +2277,7 @@ h6 {
   .metaverse-item img {
     width: 2.5rem;
   }
-
+  .slick-slider .slick-next { left: 20%;}
   .comparison-chart-bg {
     background: url(/images/comparison-chart-bg-mobile.png) no-repeat top center;
   }
@@ -2524,10 +2543,6 @@ h6 {
 
   .md\:w-\[425px\] {
     width: 425px;
-  }
-
-  .md\:w-\[430px\] {
-    width: 430px;
   }
 
   .md\:w-\[450px\] {

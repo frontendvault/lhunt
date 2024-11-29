@@ -91,7 +91,7 @@ const ExploreCities = () => {
                   alt={card.title}
                   width={320}
                   height={309}
-                  className='mx-auto'
+                  className='mx-auto mt-14 md:mt-0'
                 />
                 <div className=' p-2 flex flex-col text-center mx-auto md:px-10'>
                   <h3 className='text-3xl font-semibold my-3'>{card.title}</h3>

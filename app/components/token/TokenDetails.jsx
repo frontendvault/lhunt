@@ -43,13 +43,13 @@ const TokenDetails = () => {
             </div>
           </div>
         </div>
-        <div className='flex-col token-details-right absolute right-0 -bottom-[180px] md:bottom-auto lg:right-[-150px] w-[280px] lg:w-[370px] h-[270px] lg:h-[510px] lg:p-16 text-center '>
+        <div className='flex-col token-details-right absolute right-0 -bottom-[150px] md:bottom-auto lg:right-[-150px] w-[280px] lg:w-[370px] h-[270px] lg:h-[510px] lg:p-16 text-center '>
           <div>
             <Image
               src='/images/dice.png'
               width={400}
               height={300}
-              className='absolute md:-top-44 -left-20 md:left-0  '
+              className='absolute -top-2 md:-top-44 -left-[150px] md:left-0  '
             />
             <div className='mb-2 md:mb-4 mt-8'>
               <h4 className='text-[14px] md:text-3xl mb-0 md:mb-3'>Pre-sale Details</h4>

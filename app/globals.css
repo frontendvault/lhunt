@@ -388,6 +388,10 @@ h6 {
   .big-button {
     background: url(/images/btn-big-bg-mobile.svg) no-repeat center center;
   }
+  .exclusive-events .slick-current {
+    background: url(/images/carousel-item-bg.png) no-repeat left top;
+    @apply lg:h-[412px] lg:w-full;
+  }
   .howitworks-section1-mobile:first-child {
     @apply ml-[240px];
   }
@@ -441,7 +445,7 @@ h6 {
   .metaverse-item img{ 
     @apply w-10
   }
-
+  .slick-slider .slick-next { left: 20%;}
   .comparison-chart-bg {
     background: url(/images/comparison-chart-bg-mobile.png) no-repeat top center;
   }
