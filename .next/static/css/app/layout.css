@@ -2250,8 +2250,14 @@ h6 {
   }
   .metaverse-item {
     background: url(/images/metaverse-item-mobile.png) no-repeat center center;
-    width: 45%}
-
+    width: 45%;
+    background-size: cover}
+  .metaverse-item:hover:after {
+    display: none;
+  }
+  .metaverse-item img {
+    width: 2.5rem;
+  }
 
   .comparison-chart-bg {
     background: url(/images/comparison-chart-bg-mobile.png) no-repeat top center;
